@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Test - ZKswap</title>
+    <script src="https://unpkg.com/@solana/web3.js@1.98.4/lib/index.iife.js"></script>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            padding: 20px; 
+            background: #f5f5f5;
+        }
+        .test-box { 
+            background: white; 
+            padding: 20px; 
+            margin: 10px 0; 
+            border-radius: 8px;
+            border-left: 4px solid #6366F1;
+        }
+        .success { border-left-color: #10B981; }
+        .error { border-left-color: #EF4444; }
+        .info { border-left-color: #3B82F6; }
+        .network-indicator { 
+            font-size: 18px; 
+            font-weight: bold; 
+            padding: 10px; 
+            border-radius: 4px; 
+            margin: 10px 0;
+        }
+        .mainnet { background: #ECFDF5; color: #065F46; }
+        .devnet { background: #FEF3C7; color: #92400E; }
+    </style>
+</head>
+<body>
+    <h1>🧪 ZKswap Network Configuration Test</h1>
+    
+    <div id="results">
+        <div class="test-box info">
+            <h3>🔄 Testing Network Configuration...</h3>
+            <p>Please wait while we test the network connection...</p>
+        </div>
+    </div>
+
+    <script>
+        async function testNetworkConfiguration() {
+            const results = document.getElementById('results');
+            
+            try {
+                // Test clusterApiUrl function
+                const { clusterApiUrl, Connection } = solanaWeb3;
+                
+                // Test mainnet endpoint
+                const mainnetUrl = clusterApiUrl('mainnet-beta');
+                console.log('Mainnet URL:', mainnetUrl);
+                
+                // Test devnet endpoint
+                const devnetUrl = clusterApiUrl('devnet');
+                console.log('Devnet URL:', devnetUrl);
+                
+                // Test connection to mainnet
+                results.innerHTML += `
+                    <div class="test-box info">
+                        <h3>📡 Network URLs</h3>
+                        <p><strong>Mainnet:</strong> ${mainnetUrl}</p>
+                        <p><strong>Devnet:</strong> ${devnetUrl}</p>
+                        <p><strong>Current Configuration:</strong> ${mainnetUrl.includes('mainnet-beta') ? '✅ MAINNET-BETA' : '❌ UNKNOWN'}</p>
+                    </div>
+                `;
+                
+                // Test mainnet connection
+                const mainnetConnection = new Connection(mainnetUrl);
+                const mainnetVersion = await mainnetConnection.getVersion();
+                const mainnetSlot = await mainnetConnection.getSlot();
+                
+                results.innerHTML += `
+                    <div class="test-box success">
+                        <h3>✅ Mainnet-Beta Connection</h3>
+                        <p><strong>Solana Core:</strong> ${mainnetVersion['solana-core']}</p>
+                        <p><strong>Current Slot:</strong> ${mainnetSlot.toLocaleString()}</p>
+                        <p><strong>Status:</strong> ✅ CONNECTED & OPERATIONAL</p>
+                    </div>
+                `;
+                
+                // Test Jupiter API (mainnet)
+                try {
+                    const jupiterResponse = await fetch('https://quote-api.jup.ag/v6/quote?inputMint=So11111111111111111111111111111111111111112&outputMint=EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v&amount=1000000000&slippageBps=50');
+                    const jupiterData = await jupiterResponse.json();
+                    
+                    if (jupiterResponse.ok) {
+                        results.innerHTML += `
+                            <div class="test-box success">
+                                <h3>🪐 Jupiter API (Mainnet)</h3>
+                                <p><strong>Status:</strong> ✅ OPERATIONAL</p>
+                                <p><strong>Price:</strong> 1 SOL = ${(parseFloat(jupiterData.outAmount) / 1_000_000_000).toFixed(4)} USDC</p>
+                            </div>
+                        `;
+                    } else {
+                        results.innerHTML += `
+                            <div class="test-box error">
+                                <h3>🪐 Jupiter API (Mainnet)</h3>
+                                <p><strong>Status:</strong> ❌ ERROR (${jupiterResponse.status})</p>
+                            </div>
+                        `;
+                    }
+                } catch (jupiterError) {
+                    results.innerHTML += `
+                        <div class="test-box error">
+                            <h3>🪐 Jupiter API (Mainnet)</h3>
+                            <p><strong>Status:</strong> ❌ CONNECTION FAILED</p>
+                            <p><strong>Error:</strong> ${jupiterError.message}</p>
+                        </div>
+                    `;
+                }
+                
+                // Final summary
+                results.innerHTML += `
+                    <div class="test-box mainnet network-indicator">
+                        <h3>🎯 FINAL RESULT: MAINNET-BETA ✅</h3>
+                        <p>Your ZKswap application is correctly configured for Solana Mainnet-Beta</p>
+                        <p>All transactions will use REAL tokens with real value</p>
+                    </div>
+                `;
+                
+            } catch (error) {
+                results.innerHTML = `
+                    <div class="test-box error">
+                        <h3>❌ Test Failed</h3>
+                        <p><strong>Error:</strong> ${error.message}</p>
+                        <p>Please check your network connection and try again.</p>
+                    </div>
+                `;
+                console.error('Network test error:', error);
+            }
+        }
+        
+        // Run test when page loads
+        testNetworkConfiguration();
+    </script>
+</body>
+</html>

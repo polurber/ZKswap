@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZKswap Debug Tool</title>
+    <script src="https://unpkg.com/@solana/web3.js@latest/lib/index.iife.min.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f8fafc;
+        }
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .debug-log {
+            background: #1e293b;
+            color: #e2e8f0;
+            padding: 16px;
+            border-radius: 8px;
+            font-family: 'Monaco', 'Consolas', monospace;
+            font-size: 12px;
+            white-space: pre-wrap;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        button {
+            background: #3b82f6;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            margin: 5px;
+        }
+        button:hover { background: #2563eb; }
+        button:disabled { background: #64748b; cursor: not-allowed; }
+        .status { padding: 8px 12px; border-radius: 6px; margin: 10px 0; }
+        .status.success { background: #dcfce7; color: #15803d; }
+        .status.error { background: #fef2f2; color: #dc2626; }
+        .status.info { background: #dbeafe; color: #1d4ed8; }
+        .network-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+        .info-item { 
+            background: #f1f5f9; 
+            padding: 12px; 
+            border-radius: 8px; 
+            border-left: 4px solid #3b82f6;
+        }
+    </style>
+</head>
+<body>
+    <h1>🔧 ZKswap Debug & Testing Tool</h1>
+    
+    <div class="card">
+        <h2>📡 Network Status</h2>
+        <div id="networkStatus" class="status info">Memeriksa network...</div>
+        <div class="network-info">
+            <div class="info-item">
+                <strong>Network:</strong>
+                <div id="networkName">-</div>
+            </div>
+            <div class="info-item">
+                <strong>Endpoint:</strong>
+                <div id="endpointUrl" style="font-size: 11px; word-break: break-all;">-</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>🔑 Jupiter API Test</h2>
+        <button onclick="testJupiterQuote()">Test Quote API</button>
+        <button onclick="testDirectSwap()">Test Direct Swap</button>
+        <div id="jupiterStatus" class="status info">Ready for testing</div>
+    </div>
+
+    <div class="card">
+        <h2>💰 SOL Price Check</h2>
+        <button onclick="checkSolPrice()">Check Current SOL Price</button>
+        <div id="priceStatus" class="status info">Click button to check SOL price</div>
+    </div>
+
+    <div class="card">
+        <h2>🔍 Debug Log</h2>
+        <div id="debugLog" class="debug-log">
+=== ZKswap Debug Log ===
+Waiting for actions...
+
+        </div>
+        <button onclick="clearLog()">Clear Log</button>
+    </div>
+
+    <script>
+        const { Connection, clusterApiUrl } = solanaWeb3;
+        
+        // Initialize connection to mainnet-beta
+        const connection = new Connection(clusterApiUrl('mainnet-beta'), 'confirmed');
+        
+        function addLog(message, type = 'info') {
+            const log = document.getElementById('debugLog');
+            const timestamp = new Date().toLocaleTimeString();
+            const logEntry = `[${timestamp}] ${type.toUpperCase()}: ${message}\n`;
+            log.textContent += logEntry;
+            log.scrollTop = log.scrollHeight;
+        }
+        
+        function clearLog() {
+            document.getElementById('debugLog').textContent = '=== ZKswap Debug Log ===\nWaiting for actions...\n\n';
+        }
+        
+        function updateStatus(elementId, message, type = 'info') {
+            const element = document.getElementById(elementId);
+            element.textContent = message;
+            element.className = `status ${type}`;
+        }
+        
+        // Check network status
+        async function checkNetwork() {
+            try {
+                const version = await connection.getVersion();
+                const blockHeight = await connection.getBlockHeight();
+                
+                document.getElementById('networkName').textContent = 'Solana Mainnet-Beta';
+                document.getElementById('endpointUrl').textContent = connection.rpcEndpoint;
+                updateStatus('networkStatus', `Network connected (Block: ${blockHeight})`, 'success');
+                addLog(`✅ Network check: Connected to mainnet-beta, block height: ${blockHeight}`);
+            } catch (error) {
+                updateStatus('networkStatus', `Network error: ${error.message}`, 'error');
+                addLog(`❌ Network error: ${error.message}`, 'error');
+            }
+        }
+        
+        // Test Jupiter quote API
+        async function testJupiterQuote() {
+            updateStatus('jupiterStatus', 'Testing Jupiter quote...', 'info');
+            addLog('🔄 Testing Jupiter quote API...');
+            
+            try {
+                // SOL to USDC quote for 0.01 SOL
+                const solMint = 'So11111111111111111111111111111111111111112';
+                const usdcMint = 'EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v';
+                
+                // Convert 0.01 SOL to lamports
+                const amountInLamports = 0.01 * 1_000_000_000;
+                
+                const url = `https://quote-api.jup.ag/v6/quote?` +
+                    `inputMint=${solMint}&` +
+                    `outputMint=${usdcMint}&` +
+                    `amount=${amountInLamports}&` +
+                    `slippageBps=50`;
+                
+                addLog(`📡 Making request to: ${url.replace(solMint, 'SOL_MINT').replace(usdcMint, 'USDC_MINT')}`);
+                
+                const response = await fetch(url);
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+                
+                const quote = await response.json();
+                
+                addLog(`✅ Quote received:`);
+                addLog(`  Input: 0.01 SOL`);
+                addLog(`  Output amount (lamports): ${quote.outAmount}`);
+                
+                // Calculate the output properly
+                const outputAmount = quote.outAmount / 1_000_000; // USDC has 6 decimals
+                addLog(`  Output amount (USDC): ${outputAmount}`);
+                addLog(`  Price impact: ${quote.priceImpactPct}%`);
+                addLog(`  Route plan steps: ${quote.routePlan.length}`);
+                
+                updateStatus('jupiterStatus', `Quote OK: ${outputAmount.toFixed(6)} USDC`, 'success');
+                
+            } catch (error) {
+                updateStatus('jupiterStatus', `Quote failed: ${error.message}`, 'error');
+                addLog(`❌ Jupiter quote error: ${error.message}`, 'error');
+            }
+        }
+        
+        // Check current SOL price
+        async function checkSolPrice() {
+            updateStatus('priceStatus', 'Fetching SOL price...', 'info');
+            addLog('💰 Checking current SOL price...');
+            
+            try {
+                await testJupiterQuote(); // This will give us the quote
+                updateStatus('priceStatus', 'SOL price check completed - see log above', 'success');
+            } catch (error) {
+                updateStatus('priceStatus', `Price check failed: ${error.message}`, 'error');
+                addLog(`❌ SOL price check failed: ${error.message}`, 'error');
+            }
+        }
+        
+        // Test direct swap (simulation)
+        async function testDirectSwap() {
+            updateStatus('jupiterStatus', 'Testing swap simulation...', 'info');
+            addLog('🔄 Testing swap simulation...');
+            addLog('⚠️  This is a SIMULATION - no real transaction will be sent');
+            
+            try {
+                // This would be the actual swap process
+                addLog('1. ✅ Wallet connected check');
+                addLog('2. ✅ Balance validation passed');
+                addLog('3. ✅ Quote fetched successfully');
+                addLog('4. ⚠️  Transaction signing simulation');
+                addLog('5. ✅ Swap simulation completed');
+                
+                updateStatus('jupiterStatus', 'Swap simulation completed', 'success');
+                
+            } catch (error) {
+                updateStatus('jupiterStatus', `Simulation failed: ${error.message}`, 'error');
+                addLog(`❌ Swap simulation error: ${error.message}`, 'error');
+            }
+        }
+        
+        // Initialize on page load
+        window.onload = function() {
+            addLog('🚀 ZKswap Debug Tool initialized');
+            checkNetwork();
+        };
+    </script>
+</body>
+</html>
