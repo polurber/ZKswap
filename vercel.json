@@ -1,0 +1,13 @@
+{
+    "buildCommand": "pnpm install --prefer-offline && tsc -b && vite build",
+    "devCommand": "vite",
+    "installCommand": "pnpm install --prefer-offline",
+    "framework": "vite",
+    "outputDirectory": "dist",
+    "env": [
+        {
+            "key": "NODE_ENV",
+            "value": "production"
+        }
+    ]
+}
