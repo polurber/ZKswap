@@ -10,8 +10,8 @@ export function Footer() {
           {/* Brand */}
           <div className="col-span-1">
             <div className="flex items-center space-x-3 mb-4 group cursor-pointer">
-              <div className="w-10 h-10 bg-neo-primary border-3 border-neo-border shadow-neo-sm rounded-neo flex items-center justify-center group-hover:-translate-y-1 transition-transform">
-                <span className="text-white font-black text-xl">Z</span>
+              <div className="w-16 h-16 flex items-center justify-center group-hover:-translate-y-1 transition-transform">
+                <img src="/logo.png" alt="ZKswap Logo" className="w-full h-full object-contain" />
               </div>
               <span className="text-3xl font-black text-neo-text tracking-tighter">ZKswap</span>
             </div>

@@ -11,8 +11,8 @@ export function SecurityPage() {
             Security & Trust
           </h1>
           <p className="text-body-large text-neutral-700 max-w-3xl mx-auto">
-            ZKswap dibangun dengan keamanan sebagai prioritas utama, menggunakan 
-            standar industri dan audit independen untuk melindungi aset Anda.
+            ZKswap is built with security as the main priority, using 
+            industry standards and independent audits to protect your assets.
           </p>
         </div>
       </section>
@@ -25,7 +25,7 @@ export function SecurityPage() {
               Four Pillars of Trust
             </h2>
             <p className="text-body-large text-neutral-700">
-              Fondasi keamanan yang membuat ZKswap dapat dipercaya untuk trading privat
+              Security foundation that makes ZKswap trusted for private trading
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -35,8 +35,8 @@ export function SecurityPage() {
               </div>
               <h3 className="text-subtitle font-semibold text-neutral-900 mb-4">Non-Custodial</h3>
               <p className="text-body text-neutral-700">
-                Anda tetap memegang kendali penuh atas private keys. 
-                ZKswap tidak pernah mengcustody aset Anda.
+                You maintain full control over private keys. 
+                ZKswap never custody your assets.
               </p>
             </div>
             <div className="card p-8 text-center">
@@ -45,8 +45,8 @@ export function SecurityPage() {
               </div>
               <h3 className="text-subtitle font-semibold text-neutral-900 mb-4">Audited</h3>
               <p className="text-body text-neutral-700">
-                Smart contracts telah diaudit oleh firma keamanan terkemuka 
-                dengan hasil yang transparan.
+                Smart contracts have been audited by leading security firms 
+                with transparent results.
               </p>
             </div>
             <div className="card p-8 text-center">
@@ -55,8 +55,8 @@ export function SecurityPage() {
               </div>
               <h3 className="text-subtitle font-semibold text-neutral-900 mb-4">Compliant</h3>
               <p className="text-body text-neutral-700">
-                Mematuhi regulasi yang berlaku dengan mekanisme compliance 
-                yang privacy-preserving.
+                Complying with applicable regulations with privacy-preserving 
+                compliance mechanisms.
               </p>
             </div>
             <div className="card p-8 text-center">
@@ -425,8 +425,8 @@ export function SecurityPage() {
             Trusted by Security-Conscious Users
           </h2>
           <p className="text-body-large text-neutral-700 mb-8 max-w-2xl mx-auto">
-            Bergabung dengan thousands pengguna yang mempercayai ZKswap untuk 
-            trading yang aman dan privat.
+            Join thousands of users who trust ZKswap for 
+            secure and private trading.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="btn-primary px-8 py-4 text-lg">

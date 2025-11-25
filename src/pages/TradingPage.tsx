@@ -150,7 +150,7 @@ export function TradingPage() {
             <ExclamationTriangleIcon className="h-6 w-6 text-white" />
             <div>
               <p className="text-white font-black uppercase">⚠️ REAL BLOCKCHAIN MODE AKTIF</p>
-              <p className="text-white font-bold text-sm">Transaksi akan berjalan di blockchain Solana yang nyata. Anda bertanggung jawab penuh atas setiap transaksi.</p>
+              <p className="text-white font-bold text-sm">Transaction will run on real Solana blockchain. You are fully responsible for every transaction.</p>
             </div>
           </div>
         </div>
@@ -172,7 +172,7 @@ export function TradingPage() {
                   <div className="flex items-center space-x-2">
                     <div className="h-2 w-2 bg-white border border-black rounded-full animate-pulse"></div>
                     <div>
-                      <p className="text-sm font-black text-neo-text uppercase">Terhubung</p>
+                      <p className="text-sm font-black text-neo-text uppercase">Connected</p>
                       <p className="text-xs font-bold text-neo-text">{getBalance()}</p>
                       {publicKey && (
                         <p className="text-xs font-mono text-neo-text">
@@ -202,7 +202,7 @@ export function TradingPage() {
                   disabled={isLoading}
                 >
                   <WalletIcon className="h-5 w-5 mr-2" strokeWidth={2.5} />
-                  {isLoading ? 'Memuat...' : 'Hubungkan Wallet'}
+                  {isLoading ? 'Loading...' : 'Connect Wallet'}
                 </button>
               )}
             </div>
@@ -274,7 +274,7 @@ export function TradingPage() {
                       </span>
                     ) : (
                       <span className="text-sm font-bold text-gray-400">
-                        Memuat saldo...
+                        Loading balance...
                       </span>
                     )}
                   </div>
@@ -314,7 +314,7 @@ export function TradingPage() {
                   </select>
                   <div className="text-3xl font-black text-neo-text">
                     {isLoadingQuote ? (
-                      <span className="text-gray-400">Memuat...</span>
+                      <span className="text-gray-400">Loading...</span>
                     ) : (
                       swapData.outputAmount || '0.0'
                     )}
@@ -370,9 +370,9 @@ export function TradingPage() {
                     Memproses Swap...
                   </div>
                 ) : !isWalletConnected ? (
-                  'Hubungkan Wallet untuk Swap'
+                  'Connect Wallet for Swap'
                 ) : isLoadingQuote ? (
-                  'Memuat Quote...'
+                  'Loading Quote...'
                 ) : (
                   'Swap Sekarang'
                 )}
@@ -382,11 +382,11 @@ export function TradingPage() {
               {lastTxId && (
                 <div className="mt-4 p-3 bg-neo-success border-3 border-neo-border rounded-neo shadow-neo-sm">
                   <p className="text-sm text-neo-text font-black mb-1 uppercase">
-                    Transaksi Berhasil {isRealBlockchainMode() ? '(Real Blockchain)' : '(Demo Mode)'}
+                    Transaction Successful {isRealBlockchainMode() ? '(Real Blockchain)' : '(Demo Mode)'}
                   </p>
                   {isRealBlockchainMode() ? (
                     <div className="space-y-2">
-                      <p className="text-xs text-neo-text font-bold">Transaksi real di blockchain Solana</p>
+                      <p className="text-xs text-neo-text font-bold">Real transaction on Solana blockchain</p>
                       <a
                         href={`https://explorer.solana.com/tx/${lastTxId}?cluster=mainnet-beta`}
                         target="_blank"
@@ -431,7 +431,7 @@ export function TradingPage() {
 
             {/* Privacy Features */}
             <div className="mb-6 card p-6 bg-neo-primary border-3 border-neo-border">
-              <h3 className="text-xl font-black text-white mb-3 uppercase">Fitur Privacy</h3>
+              <h3 className="text-xl font-black text-white mb-3 uppercase">Privacy Features</h3>
               <ul className="space-y-2 text-sm text-white font-bold">
                 <li className="flex items-start">
                   <div className="h-2 w-2 bg-white border border-black rounded-full mr-2 mt-1.5"></div>
@@ -460,7 +460,7 @@ export function TradingPage() {
                   <div>
                     <p className="text-gray-600 font-bold mb-1">Saldo SOL</p>
                     <p className="font-black text-neo-text text-2xl">
-                      {balance !== null ? `${balance.toFixed(4)} SOL` : 'Memuat saldo...'}
+                      {balance !== null ? `${balance.toFixed(4)} SOL` : 'Loading balance...'}
                     </p>
                     {inputTokenBalance !== null && inputTokenBalance !== balance && (
                       <p className="text-xs font-mono text-gray-500 mt-1">

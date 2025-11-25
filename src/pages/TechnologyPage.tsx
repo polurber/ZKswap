@@ -12,8 +12,8 @@ export function TechnologyPage() {
             Zero-Knowledge Technology
           </h1>
           <p className="text-body-large text-neutral-700 max-w-3xl mx-auto">
-            ZKswap menggunakan teknologi zero-knowledge yang terdepan untuk memberikan 
-            privasi maksimal tanpa mengorbankan transparansi dan verifikasi.
+            ZKswap uses cutting-edge zero-knowledge technology to provide 
+            maximum privacy without compromising transparency and verification.
           </p>
         </div>
       </section>
@@ -26,7 +26,7 @@ export function TechnologyPage() {
               Zero-Knowledge 101
             </h2>
             <p className="text-body-large text-neutral-700">
-              Memahami konsep dasar zero-knowledge proofs dan aplikasinya dalam DeFi
+              Understanding basic zero-knowledge proofs concepts and their applications in DeFi
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -36,8 +36,8 @@ export function TechnologyPage() {
               </div>
               <h3 className="text-subtitle font-semibold text-neutral-900 mb-4">Input Transaksi</h3>
               <p className="text-body text-neutral-700">
-                Detail sensitif seperti alamat pengirim, penerima, dan jumlah 
-                diproses secara privat tanpa diekspos ke blockchain
+                Sensitive details such as sender address, recipient, and amounts 
+                are processed privately without exposure to the blockchain
               </p>
             </div>
             <div className="card p-8 text-center">
@@ -46,8 +46,8 @@ export function TechnologyPage() {
               </div>
               <h3 className="text-subtitle font-semibold text-neutral-900 mb-4">ZK Proof Generation</h3>
               <p className="text-body text-neutral-700">
-                Sistem menghasilkan bukti kriptografis yang membuktikan 
-                transaksi valid tanpa reveal data sensitif
+                The system generates cryptographic proofs that prove 
+                transaction validity without revealing sensitive data
               </p>
             </div>
             <div className="card p-8 text-center">
@@ -56,8 +56,8 @@ export function TechnologyPage() {
               </div>
               <h3 className="text-subtitle font-semibold text-neutral-900 mb-4">On-Chain Verification</h3>
               <p className="text-body text-neutral-700">
-                Bukti diverifikasi oleh smart contracts on-chain tanpa 
-                membuka detail transaksi yang private
+                Proofs are verified by on-chain smart contracts without 
+                opening up private transaction details
               </p>
             </div>
           </div>
@@ -69,10 +69,10 @@ export function TechnologyPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-title font-bold text-neutral-900 mb-4">
-              Arsitektur ZKswap
+              ZKswap Architecture
             </h2>
             <p className="text-body-large text-neutral-700">
-              Sistem terintegrasi yang menggabungkan privasi ZK dengan DeFi yang efisien
+              Integrated system that combines ZK privacy with efficient DeFi
             </p>
           </div>
           <div className="card p-8">
@@ -83,8 +83,8 @@ export function TechnologyPage() {
                 </div>
                 <h3 className="text-subtitle font-semibold text-neutral-900 mb-4">Privacy Module</h3>
                 <p className="text-body text-neutral-700">
-                  Menangani ZK proofs, private state management, 
-                  dan privacy policy enforcement
+                  Handles ZK proofs, private state management, 
+                  and privacy policy enforcement
                 </p>
               </div>
               <div className="text-center">
@@ -93,8 +93,8 @@ export function TechnologyPage() {
                 </div>
                 <h3 className="text-subtitle font-semibold text-neutral-900 mb-4">Execution Module</h3>
                 <p className="text-body text-neutral-700">
-                  Mengeksekusi transaksi dengan efisien, 
-                  routing optimal, dan MEV protection
+                  Executes transactions efficiently, 
+                  optimal routing, and MEV protection
                 </p>
               </div>
               <div className="text-center">
@@ -103,8 +103,8 @@ export function TechnologyPage() {
                 </div>
                 <h3 className="text-subtitle font-semibold text-neutral-900 mb-4">Liquidity Aggregator</h3>
                 <p className="text-body text-neutral-700">
-                  Mengagregasi likuiditas dari berbagai DEXs 
-                  untuk harga terbaik dan slippage minimal
+                  Aggregates liquidity from various DEXs 
+                  for the best prices and minimal slippage
                 </p>
               </div>
             </div>
@@ -118,35 +118,35 @@ export function TechnologyPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-title font-bold text-neutral-900 mb-6">
-                Integrasi dengan Solana
+                Solana Integration
               </h2>
               <p className="text-body-large text-neutral-700 mb-8">
-                ZKswap dibangun di atas infrastruktur Solana yang cepat dan efisien, 
-                memanfaatkan fitur-fitur ZK yang tersedia di ekosistem Solana.
+                ZKswap is built on fast and efficient Solana infrastructure, 
+                utilizing ZK features available in the Solana ecosystem.
               </p>
               <div className="space-y-6">
                 <div className="border-l-4 border-primary-500 pl-6">
                   <h3 className="font-semibold text-neutral-900 mb-2">Poseidon Hash Functions</h3>
                   <p className="text-body text-neutral-700">
-                    Menggunakan hash function yang dioptimalkan untuk ZK di runtime Solana
+                    Using optimized hash functions for ZK in Solana runtime
                   </p>
                 </div>
                 <div className="border-l-4 border-primary-500 pl-6">
                   <h3 className="font-semibold text-neutral-900 mb-2">ZKP Syscalls</h3>
                   <p className="text-body text-neutral-700">
-                    Leverage syscalls ZK untuk verifikasi yang efisien dan biaya rendah
+                    Leverage ZK syscalls for efficient and low-cost verification
                   </p>
                 </div>
                 <div className="border-l-4 border-primary-500 pl-6">
                   <h3 className="font-semibold text-neutral-900 mb-2">Parallel Execution</h3>
                   <p className="text-body text-neutral-700">
-                    Manfaatkan model eksekusi paralel Solana untuk throughput tinggi
+                    Utilize Solana's parallel execution model for high throughput
                   </p>
                 </div>
                 <div className="border-l-4 border-primary-500 pl-6">
                   <h3 className="font-semibold text-neutral-900 mb-2">Low Gas Costs</h3>
                   <p className="text-body text-neutral-700">
-                    Biaya transaksi yang sangat rendah memungkinkan privasi dengan biaya terjangkau
+                    Very low transaction costs enable affordable privacy
                   </p>
                 </div>
               </div>
@@ -154,7 +154,7 @@ export function TechnologyPage() {
             <div className="card p-8">
               <div className="bg-gradient-to-br from-primary-50 to-primary-100 rounded-lg p-8">
                 <h3 className="text-subtitle font-semibold text-neutral-900 mb-6 text-center">
-                  Performa Solana vs Ethereum
+                  Solana vs Ethereum Performance
                 </h3>
                 <div className="space-y-4">
                   <div className="flex justify-between items-center">

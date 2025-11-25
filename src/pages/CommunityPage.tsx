@@ -11,8 +11,8 @@ export function CommunityPage() {
             Join the Community
           </h1>
           <p className="text-body-large text-neutral-700 max-w-3xl mx-auto">
-            Bergabunglah dengan komunitas privacy DeFi terdepan dan jadilah bagian dari 
-            revolusi trading privat di ekosistem Solana.
+            Join the leading privacy DeFi community and be part of the 
+            private trading revolution in the Solana ecosystem.
           </p>
         </div>
       </section>
@@ -25,7 +25,7 @@ export function CommunityPage() {
               Connect With Us
             </h2>
             <p className="text-body-large text-neutral-700">
-              Temukan ZKswap di platform pilihan Anda dan tetap up-to-date dengan perkembangan terbaru
+              Find ZKswap on your preferred platform and stay up-to-date with the latest developments
             </p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">

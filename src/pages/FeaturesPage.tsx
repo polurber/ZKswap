@@ -11,8 +11,8 @@ export function FeaturesPage() {
             Privacy-First Features
           </h1>
           <p className="text-body-large text-neutral-700 max-w-3xl mx-auto">
-            ZKswap menawarkan berbagai fitur privasi yang dapat disesuaikan untuk memenuhi 
-            kebutuhan trading Anda, dari privacy level dasar hingga maximum privacy.
+            ZKswap offers various customizable privacy features to meet 
+            your trading needs, from basic privacy levels to maximum privacy.
           </p>
         </div>
       </section>
@@ -22,10 +22,10 @@ export function FeaturesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-title font-bold text-neutral-900 mb-4">
-              Levels Privasi
+              Privacy Levels
             </h2>
             <p className="text-body-large text-neutral-700">
-              Pilih level privasi yang sesuai dengan kebutuhan trading Anda
+              Choose privacy level according to your trading needs
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -35,14 +35,14 @@ export function FeaturesPage() {
               </div>
               <h3 className="text-subtitle font-semibold text-neutral-900 mb-4">Standard Privacy</h3>
               <p className="text-body text-neutral-700 mb-6">
-                Privasi dasar dengan one-time addresses dan route obfuscation
+                Basic privacy with one-time addresses and route obfuscation
               </p>
               <ul className="space-y-3 text-sm text-neutral-600">
                 <li>• One-time addresses</li>
                 <li>• Route obfuscation</li>
                 <li>• Metadata protection</li>
-                <li>• Fast execution (0-3 menit)</li>
-                <li>• Biaya rendah</li>
+                <li>• Fast execution (0-3 minutes)</li>
+                <li>• Low fees</li>
               </ul>
             </div>
             <div className="card p-8 border-2 border-primary-500">
@@ -51,14 +51,14 @@ export function FeaturesPage() {
               </div>
               <h3 className="text-subtitle font-semibold text-neutral-900 mb-4">Private Mode</h3>
               <p className="text-body text-neutral-700 mb-6">
-                Privasi ditingkatkan dengan two-hop routing dan random bridge tokens
+                Enhanced privacy with two-hop routing and random bridge tokens
               </p>
               <ul className="space-y-3 text-sm text-neutral-600">
                 <li>• Two-hop routing</li>
                 <li>• Random bridge tokens</li>
                 <li>• Advanced obfuscation</li>
-                <li>• Balanced speed (5-15 menit)</li>
-                <li>• Biaya menengah</li>
+                <li>• Balanced speed (5-15 minutes)</li>
+                <li>• Medium fees</li>
               </ul>
             </div>
             <div className="card p-8">
@@ -67,14 +67,14 @@ export function FeaturesPage() {
               </div>
               <h3 className="text-subtitle font-semibold text-neutral-900 mb-4">Maximum Privacy</h3>
               <p className="text-body text-neutral-700 mb-6">
-                Privasi maksimal dengan ring signatures dan Monero integration
+                Maximum privacy with ring signatures and Monero integration
               </p>
               <ul className="space-y-3 text-sm text-neutral-600">
                 <li>• Ring signatures</li>
                 <li>• Monero integration</li>
                 <li>• Anonymity set protection</li>
-                <li>• Maximum security (10-40 menit)</li>
-                <li>• Biaya lebih tinggi</li>
+                <li>• Maximum security (10-40 minutes)</li>
+                <li>• Higher fees</li>
               </ul>
             </div>
           </div>
@@ -87,11 +87,11 @@ export function FeaturesPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-title font-bold text-neutral-900 mb-6">
-                Mekanisme Aggregator
+                Aggregator Mechanism
               </h2>
               <p className="text-body-large text-neutral-700 mb-8">
-                ZKswap mengagregasi likuiditas dari multiple DEXs untuk memberikan harga terbaik 
-                dan slippage minimal, sambil mempertahankan privasi transaksi.
+                ZKswap aggregates liquidity from multiple DEXs to provide the best prices 
+                and minimal slippage while maintaining transaction privacy.
               </p>
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
@@ -101,7 +101,7 @@ export function FeaturesPage() {
                   <div>
                     <h3 className="font-semibold text-neutral-900 mb-2">Price Discovery</h3>
                     <p className="text-body text-neutral-700">
-                      Sistem mencari harga terbaik dari berbagai sumber likuiditas secara real-time
+                      The system searches for the best prices from various liquidity sources in real-time
                     </p>
                   </div>
                 </div>
@@ -112,7 +112,7 @@ export function FeaturesPage() {
                   <div>
                     <h3 className="font-semibold text-neutral-900 mb-2">Split Routing</h3>
                     <p className="text-body text-neutral-700">
-                      Transaksi dibagi ke multiple routes untuk meminimalkan slippage dan mendapatkan harga optimal
+                      Transactions are divided across multiple routes to minimize slippage and get optimal prices
                     </p>
                   </div>
                 </div>
@@ -123,7 +123,7 @@ export function FeaturesPage() {
                   <div>
                     <h3 className="font-semibold text-neutral-900 mb-2">Privacy-Enhanced</h3>
                     <p className="text-body text-neutral-700">
-                      Semua routing dilakukan dengan privasi maksimal tanpa mengorbankan eksekusi
+                      All routing is done with maximum privacy without compromising execution
                     </p>
                   </div>
                 </div>
@@ -132,7 +132,7 @@ export function FeaturesPage() {
             <div className="card p-8">
               <div className="bg-gradient-to-br from-primary-50 to-primary-100 rounded-lg p-8">
                 <h3 className="text-subtitle font-semibold text-neutral-900 mb-6 text-center">
-                  Eksekusi Tradisional vs ZKswap
+                  Traditional Execution vs ZKswap
                 </h3>
                 <div className="space-y-4">
                   <div className="flex justify-between items-center p-3 bg-white rounded-lg">
@@ -159,10 +159,10 @@ export function FeaturesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-title font-bold text-neutral-900 mb-4">
-              Deep Dive: Fitur Utama
+              Deep Dive: Main Features
             </h2>
             <p className="text-body-large text-neutral-700">
-              Pelajari secara detail bagaimana setiap fitur bekerja untuk memberikan pengalaman trading terbaik
+              Learn in detail how each feature works to provide the best trading experience
             </p>
           </div>
           <div className="space-y-16">
@@ -174,14 +174,14 @@ export function FeaturesPage() {
                 </div>
                 <h3 className="text-subtitle font-semibold text-neutral-900 mb-4">Best Execution Engine</h3>
                 <p className="text-body text-neutral-700 mb-6">
-                  Algoritma eksekusi yang canggih menggunakan machine learning untuk mengidentifikasi 
-                  route optimal dan meminimalkan slippage dalam berbagai kondisi market.
+                  Advanced execution algorithms using machine learning to identify 
+                  optimal routes and minimize slippage in various market conditions.
                 </p>
                 <ul className="space-y-2 text-body text-neutral-600">
-                  <li>• Real-time price discovery dari 15+ DEXs</li>
+                  <li>• Real-time price discovery from 15+ DEXs</li>
                   <li>• Smart routing dengan AI optimization</li>
                   <li>• MEV protection dan front-running mitigation</li>
-                  <li>• Auto-retry dengan fallback routes</li>
+                  <li>• Auto-retry with fallback routes</li>
                 </ul>
               </div>
               <div className="card p-6">
@@ -204,16 +204,16 @@ export function FeaturesPage() {
                 <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-6">
                   <Zap className="text-primary-600" size={24} />
                 </div>
-                <h3 className="text-subtitle font-semibold text-neutral-900 mb-4">Biaya Rendah yang Efisien</h3>
+                <h3 className="text-subtitle font-semibold text-neutral-900 mb-4">Efficient Low Fees</h3>
                 <p className="text-body text-neutral-700 mb-6">
-                  Dengan infrastruktur Solana yang berbiaya rendah, ZKswap dapat menawarkan 
-                  fee structure yang kompetitif tanpa mengorbankan kualitas eksekusi.
+                  With low-cost Solana infrastructure, ZKswap can offer 
+                  competitive fee structures without compromising execution quality.
                 </p>
                 <ul className="space-y-2 text-body text-neutral-600">
                   <li>• 0.1% protocol fee (below industry average)</li>
                   <li>• Solana gas fees (typically &lt;$0.01)</li>
-                  <li>• No hidden fees atau markups</li>
-                  <li>• Fee discounts untuk high-volume users</li>
+                  <li>• No hidden fees or markups</li>
+                  <li>• Fee discounts for high-volume users</li>
                 </ul>
               </div>
             </div>
@@ -224,16 +224,16 @@ export function FeaturesPage() {
                 <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-6">
                   <Shield className="text-primary-600" size={24} />
                 </div>
-                <h3 className="text-subtitle font-semibold text-neutral-900 mb-4">Keamanan & Kontrol</h3>
+                <h3 className="text-subtitle font-semibold text-neutral-900 mb-4">Security & Control</h3>
                 <p className="text-body text-neutral-700 mb-6">
-                  ZKswap mengutamakan non-custodial design, memberikan kontrol penuh kepada 
-                  user atas aset mereka sambil mempertahankan keamanan maksimal.
+                  ZKswap prioritizes non-custodial design, giving users full control over 
+                  their assets while maintaining maximum security.
                 </p>
                 <ul className="space-y-2 text-body text-neutral-600">
-                  <li>• Non-custodial: user tetap kontrol private keys</li>
+                  <li>• Non-custodial: users control private keys</li>
                   <li>• Audited smart contracts</li>
-                  <li>• Bug bounty program aktif</li>
-                  <li>• Real-time monitoring dan alerting</li>
+                  <li>• Active bug bounty program</li>
+                  <li>• Real-time monitoring and alerting</li>
                 </ul>
               </div>
               <div className="card p-6">
@@ -252,10 +252,10 @@ export function FeaturesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-title font-bold text-neutral-900 mb-4">
-              Ekosistem & Integrasi
+              Ecosystem & Integration
             </h2>
             <p className="text-body-large text-neutral-700">
-              ZKswap terintegrasi dengan berbagai protokol dan platform di ekosistem Solana
+              ZKswap is integrated with various protocols and platforms in the Solana ecosystem
             </p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
@@ -291,10 +291,10 @@ export function FeaturesPage() {
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-title font-bold text-neutral-900 mb-6">
-            Siap Mengalami Trading Privasi?
+            Ready to Experience Private Trading?
           </h2>
           <p className="text-body-large text-neutral-700 mb-8 max-w-2xl mx-auto">
-            Explore semua fitur ZKswap dan rasakan perbedaan trading dengan privasi maksimal.
+            Explore all ZKswap features and experience the difference of trading with maximum privacy.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="btn-primary px-8 py-4 text-lg">

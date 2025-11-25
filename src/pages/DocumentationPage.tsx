@@ -30,8 +30,8 @@ export function DocumentationPage() {
               Documentation
             </h1>
             <p className="text-body-large text-neutral-700 max-w-3xl mx-auto mb-8">
-              Comprehensive guide untuk mengintegrasikan ZKswap ke dalam aplikasi Anda, 
-              memahami privacy modes, dan memulai development.
+              Comprehensive guide for integrating ZKswap into your application, 
+              understanding privacy modes, and getting started with development.
             </p>
             
             {/* Search Bar */}
@@ -86,8 +86,8 @@ export function DocumentationPage() {
                 <div>
                   <h2 className="text-title font-bold text-neutral-900 mb-6">Getting Started</h2>
                   <p className="text-body text-neutral-700 mb-8">
-                    Panduan lengkap untuk memulai development dengan ZKswap. Dari setup environment 
-                    hingga first trade yang privat.
+                    Complete guide to getting started with ZKswap development. From environment setup 
+                    to your first private trade.
                   </p>
                 </div>
 
@@ -95,31 +95,31 @@ export function DocumentationPage() {
                 <div className="card p-8">
                   <h3 className="text-subtitle font-semibold text-neutral-900 mb-4">Quick Start</h3>
                   <p className="text-body text-neutral-700 mb-6">
-                    Mulai trading dengan ZKswap dalam beberapa langkah sederhana:
+                    Start trading with ZKswap in a few simple steps:
                   </p>
                   <ol className="space-y-4 text-body text-neutral-700">
                     <li className="flex items-start">
                       <span className="flex-shrink-0 w-6 h-6 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center text-sm font-semibold mr-3 mt-0.5">1</span>
                       <div>
-                        <strong>Connect Wallet:</strong> Hubungkan dompet Solana Anda menggunakan adapter WalletConnect atau Phantom
+                        <strong>Connect Wallet:</strong> Connect your Solana wallet using WalletConnect or Phantom adapter
                       </div>
                     </li>
                     <li className="flex items-start">
                       <span className="flex-shrink-0 w-6 h-6 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center text-sm font-semibold mr-3 mt-0.5">2</span>
                       <div>
-                        <strong>Select Privacy Level:</strong> Pilih level privasi (Standard, Private, atau Maximum Privacy)
+                        <strong>Select Privacy Level:</strong> Choose privacy level (Standard, Private, or Maximum Privacy)
                       </div>
                     </li>
                     <li className="flex items-start">
                       <span className="flex-shrink-0 w-6 h-6 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center text-sm font-semibold mr-3 mt-0.5">3</span>
                       <div>
-                        <strong>Choose Trading Pair:</strong> Pilih pair aset yang ingin ditradingkan
+                        <strong>Choose Trading Pair:</strong> Select asset pair you want to trade
                       </div>
                     </li>
                     <li className="flex items-start">
                       <span className="flex-shrink-0 w-6 h-6 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center text-sm font-semibold mr-3 mt-0.5">4</span>
                       <div>
-                        <strong>Execute Trade:</strong> Set slippage tolerance dan confirm transaksi
+                        <strong>Execute Trade:</strong> Set slippage tolerance and confirm transaction
                       </div>
                     </li>
                   </ol>

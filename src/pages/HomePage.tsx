@@ -68,8 +68,8 @@ export function HomePage() {
               <span className="bg-neo-primary text-white px-4 py-1 border-3 border-neo-border shadow-neo rotate-1 inline-block mt-2">Uncompromised</span>
             </h1>
             <p className="text-xl md:text-2xl font-bold text-neo-text mb-10 max-w-3xl mx-auto leading-relaxed border-3 border-neo-border bg-white p-6 rounded-neo shadow-neo relative z-10">
-              ZKswap adalah DEX aggregator privacy-first yang menggabungkan zero-knowledge proofs 
-              dengan agregasi likuiditas untuk memberikan harga terbaik, biaya rendah, dan privasi maksimal.
+              ZKswap is a privacy-first DEX aggregator that combines zero-knowledge proofs 
+              with liquidity aggregation to provide the best prices, low fees, and maximum privacy.
             </p>
             
             {/* Wallet Status */}
@@ -155,10 +155,10 @@ export function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-5xl font-black text-neo-text mb-6 uppercase tracking-tight">
-              Mulai Trading dalam <span className="text-neo-primary underline decoration-wavy decoration-3">3 Langkah</span>
+              Start Trading in <span className="text-neo-primary underline decoration-wavy decoration-3">3 Steps</span>
             </h2>
             <p className="text-2xl font-bold text-neo-text max-w-2xl mx-auto">
-              Pengalaman trading privat yang sederhana dan aman
+              Simple and secure private trading experience
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -168,16 +168,16 @@ export function HomePage() {
               </div>
               <h3 className="text-2xl font-black text-neo-text mb-4 group-hover:text-white">Connect Wallet</h3>
               <p className="text-lg font-medium text-neo-text group-hover:text-white">
-                Hubungkan dompet Solana Anda dengan aman dan mulai trading privat
+                Securely connect your Solana wallet and start private trading
               </p>
             </div>
             <div className="card bg-white group hover:bg-neo-secondary hover:text-white transition-colors">
               <div className="w-20 h-20 bg-neo-primary border-3 border-neo-border rounded-full flex items-center justify-center mx-auto mb-6 shadow-neo group-hover:shadow-neo-hover group-hover:bg-white transition-all">
                 <span className="text-4xl font-black text-white group-hover:text-neo-text">2</span>
               </div>
-              <h3 className="text-2xl font-black text-neo-text mb-4 group-hover:text-white">Pilih Level Privasi</h3>
+              <h3 className="text-2xl font-black text-neo-text mb-4 group-hover:text-white">Choose Privacy Level</h3>
               <p className="text-lg font-medium text-neo-text group-hover:text-white">
-                Pilih level privasi sesuai kebutuhan: Standard, Private, atau Maximum Privacy
+                Choose privacy level according to your needs: Standard, Private, or Maximum Privacy
               </p>
             </div>
             <div className="card bg-white group hover:bg-neo-accent hover:text-neo-text transition-colors">
@@ -186,7 +186,7 @@ export function HomePage() {
               </div>
               <h3 className="text-2xl font-black text-neo-text mb-4">Start Trading</h3>
               <p className="text-lg font-medium text-neo-text">
-                Trading dengan harga terbaik dan privasi terjamin
+                Trading with the best prices and guaranteed privacy
               </p>
             </div>
           </div>
@@ -198,10 +198,10 @@ export function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-5xl font-black text-neo-text mb-6 uppercase tracking-tight">
-              Fitur Utama <span className="bg-neo-accent px-2">ZKswap</span>
+              Main Features <span className="bg-neo-accent px-2">ZKswap</span>
             </h2>
             <p className="text-2xl font-bold text-neo-text">
-              Kombinasi terbaik privasi, kinerja, dan kemudahan penggunaan
+              The best combination of privacy, performance, and ease of use
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -211,7 +211,7 @@ export function HomePage() {
               </div>
               <h3 className="text-xl font-black text-neo-text mb-4 uppercase">ZK Privacy</h3>
               <p className="text-base font-bold text-neo-text">
-                Lindungi identitas dan transaksi dengan zero-knowledge proofs yang telah terbukti
+                Protect identity and transactions with proven zero-knowledge proofs
               </p>
             </div>
             <div className="card hover:bg-neo-bg">
@@ -220,7 +220,7 @@ export function HomePage() {
               </div>
               <h3 className="text-xl font-black text-neo-text mb-4 uppercase">Best Execution</h3>
               <p className="text-base font-bold text-neo-text">
-                Dapatkan harga terbaik melalui agregasi likuiditas lintas multiple DEXs
+                Get the best prices through cross-DEX liquidity aggregation
               </p>
             </div>
             <div className="card hover:bg-neo-bg">
@@ -229,7 +229,7 @@ export function HomePage() {
               </div>
               <h3 className="text-xl font-black text-neo-text mb-4 uppercase">Low Fees</h3>
               <p className="text-base font-bold text-neo-text">
-                Biaya trading rendah dengan efisiensi Solana blockchain
+                Low trading fees with Solana blockchain efficiency
               </p>
             </div>
             <div className="card hover:bg-neo-bg">
@@ -238,7 +238,7 @@ export function HomePage() {
               </div>
               <h3 className="text-xl font-black text-neo-text mb-4 uppercase">Fast UX</h3>
               <p className="text-base font-bold text-neo-text">
-                Pengalaman user yang cepat dan intuitif untuk semua level trader
+                Fast and intuitive user experience for all trader levels
               </p>
             </div>
           </div>
@@ -254,8 +254,8 @@ export function HomePage() {
                 Cara Kerja <br/>Zero-Knowledge
               </h2>
               <p className="text-xl font-bold text-neo-text mb-8 leading-relaxed border-l-4 border-neo-primary pl-6">
-                ZKswap menggunakan zero-knowledge proofs untuk meminimalkan data on-chain 
-                yang diekspos, sementara tetap menjamin validitas transaksi.
+                ZKswap uses zero-knowledge proofs to minimize on-chain data 
+                exposure while ensuring transaction validity.
               </p>
               <div className="space-y-6">
                 <div className="flex items-start space-x-6 bg-white p-4 rounded-neo border-3 border-neo-border shadow-neo">
@@ -263,9 +263,9 @@ export function HomePage() {
                     <span className="text-xl font-black text-white">1</span>
                   </div>
                   <div>
-                    <h3 className="text-xl font-black text-neo-text mb-1 uppercase">Input Transaksi</h3>
+                    <h3 className="text-xl font-black text-neo-text mb-1 uppercase">Transaction Input</h3>
                     <p className="text-base font-bold text-neo-text">
-                      Detail transaksi diproses secara privat tanpa diekspos ke blockchain
+                      Transaction details are processed privately without exposure to blockchain
                     </p>
                   </div>
                 </div>
@@ -276,7 +276,7 @@ export function HomePage() {
                   <div>
                     <h3 className="text-xl font-black text-neo-text mb-1 uppercase">ZK Proof Generation</h3>
                     <p className="text-base font-bold text-neo-text">
-                      Sistem menghasilkan bukti kriptografis yang membuktikan transaksi valid
+                      The system generates cryptographic proof that proves transaction validity
                     </p>
                   </div>
                 </div>
@@ -287,7 +287,7 @@ export function HomePage() {
                   <div>
                     <h3 className="text-xl font-black text-neo-text mb-1 uppercase">On-Chain Verification</h3>
                     <p className="text-base font-bold text-neo-text">
-                      Bukti diverifikasi on-chain tanpa membuka detail transaksi
+                      Proofs are verified on-chain without revealing transaction details
                     </p>
                   </div>
                 </div>
@@ -300,11 +300,11 @@ export function HomePage() {
                     <Lock className="w-12 h-12 text-neo-text" strokeWidth={2.5} />
                   </div>
                   <h3 className="text-3xl font-black text-neo-text mb-4 uppercase">
-                    Privasi Tanpa Kompromi
+                    Uncompromised Privacy
                   </h3>
                   <p className="text-lg font-bold text-neo-text">
-                    ZKswap memungkinkan trading dengan privasi maksimal tanpa mengorbankan 
-                    transparansi dan keamanan blockchain.
+                    ZKswap enables trading with maximum privacy without compromising 
+                    blockchain transparency and security.
                   </p>
                 </div>
               </div>
@@ -318,20 +318,20 @@ export function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-5xl font-black text-neo-text mb-6 uppercase">
-              Kinerja Terpercaya
+              Trusted Performance
             </h2>
             <p className="text-2xl font-bold text-neo-text">
-              Metrik performa yang menunjukkan keunggulan ZKswap
+              Performance metrics showing the superiority of ZKswap
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center p-8 border-3 border-neo-border bg-neo-bg rounded-neo shadow-neo hover:shadow-neo-lg transition-all">
               <div className="text-5xl font-black text-neo-success mb-2">0.05%</div>
-              <div className="text-lg font-bold text-neo-text uppercase">Slippage Rata-rata</div>
+              <div className="text-lg font-bold text-neo-text uppercase">Average Slippage</div>
             </div>
             <div className="text-center p-8 border-3 border-neo-border bg-neo-bg rounded-neo shadow-neo hover:shadow-neo-lg transition-all">
               <div className="text-5xl font-black text-neo-primary mb-2">0.3s</div>
-              <div className="text-lg font-bold text-neo-text uppercase">Konfirmasi Transaksi</div>
+              <div className="text-lg font-bold text-neo-text uppercase">Transaction Confirmation</div>
             </div>
             <div className="text-center p-8 border-3 border-neo-border bg-neo-bg rounded-neo shadow-neo hover:shadow-neo-lg transition-all">
               <div className="text-5xl font-black text-neo-secondary mb-2">95%</div>
@@ -339,7 +339,7 @@ export function HomePage() {
             </div>
             <div className="text-center p-8 border-3 border-neo-border bg-neo-bg rounded-neo shadow-neo hover:shadow-neo-lg transition-all">
               <div className="text-5xl font-black text-neo-accent mb-2">15+</div>
-              <div className="text-lg font-bold text-neo-text uppercase">DEX Terintegrasi</div>
+              <div className="text-lg font-bold text-neo-text uppercase">Integrated DEXs</div>
             </div>
           </div>
         </div>
@@ -350,11 +350,11 @@ export function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
             <h2 className="text-5xl font-black text-neo-text mb-8 uppercase tracking-tight">
-              Bergabung dengan <span className="bg-neo-secondary text-white px-3 shadow-neo-sm transform -rotate-2 inline-block">Komunitas</span> ZKswap
+              Join the <span className="bg-neo-secondary text-white px-3 shadow-neo-sm transform -rotate-2 inline-block">Community</span> of ZKswap
             </h2>
             <p className="text-2xl font-bold text-neo-text mb-12 leading-relaxed">
-              Jadilah bagian dari revolusi privacy DeFi dan dapatkan akses ke fitur eksklusif, 
-              reward, dan program ambassador.
+              Be part of the privacy DeFi revolution and get access to exclusive features, 
+              rewards, and ambassador programs.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Link to="/community" className="btn-primary text-xl px-12 py-4">
@@ -373,10 +373,10 @@ export function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="bg-white border-3 border-neo-border p-12 rounded-neo shadow-neo-xl max-w-4xl mx-auto transform hover:-translate-y-2 transition-transform">
             <h2 className="text-5xl font-black text-neo-text mb-8 uppercase">
-              Siap untuk Trading Privat?
+              Ready for Private Trading?
             </h2>
             <p className="text-2xl font-bold text-neo-text mb-10 max-w-2xl mx-auto">
-              Mulai experience trading yang revolusioner dengan privasi maksimal dan performa terdepan.
+              Start a revolutionary trading experience with maximum privacy and cutting-edge performance.
             </p>
             <button 
               onClick={handleStartTrading}
