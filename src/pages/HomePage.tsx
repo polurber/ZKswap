@@ -251,7 +251,7 @@ export function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-5xl font-black text-neo-text mb-8 uppercase tracking-tight">
-                Cara Kerja <br/>Zero-Knowledge
+                How It Works: <br/>Zero-Knowledge
               </h2>
               <p className="text-xl font-bold text-neo-text mb-8 leading-relaxed border-l-4 border-neo-primary pl-6">
                 ZKswap uses zero-knowledge proofs to minimize on-chain data 

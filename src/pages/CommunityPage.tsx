@@ -41,7 +41,7 @@ export function CommunityPage() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
-            <a href="https://x.com/zkswap131087?s=21" className="card p-8 text-center hover:scale-105 transition-transform" target="_blank" rel="noopener noreferrer">
+            <a href="https://x.com/zkswap131087" className="card p-8 text-center hover:scale-105 transition-transform" target="_blank" rel="noopener noreferrer">
               <div className="w-16 h-16 bg-primary-100 rounded-lg flex items-center justify-center mx-auto mb-4">
                 <XLogo className="text-primary-600" size={32} />
               </div>
@@ -67,7 +67,7 @@ export function CommunityPage() {
               Community Programs
             </h2>
             <p className="text-body-large text-neutral-700">
-              Berbagai program untuk berkontribusi dan mendapatkan reward dari ekosistem ZKswap
+              Various programs to contribute and earn rewards from the ZKswap ecosystem
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -77,8 +77,8 @@ export function CommunityPage() {
               </div>
               <h3 className="text-subtitle font-semibold text-neutral-900 mb-4">Ambassador Program</h3>
               <p className="text-body text-neutral-700 mb-6">
-                Jadilah duta ZKswap dan dapatkan reward untuk membantu membangun komunitas
-                privacy DeFi di region Anda.
+                Become a ZKswap ambassador and earn rewards for helping build the
+                privacy DeFi community in your region.
               </p>
               <ul className="space-y-3 text-body text-neutral-600">
                 <li>• Monthly salary + performance bonuses</li>
@@ -96,8 +96,8 @@ export function CommunityPage() {
               </div>
               <h3 className="text-subtitle font-semibold text-neutral-900 mb-4">Grant Program</h3>
               <p className="text-body text-neutral-700 mb-6">
-                Dapatkan funding untuk membangun tools, integrations, dan aplikasi
-                yang memperluas ekosistem privacy DeFi.
+                Get funding to build tools, integrations, and applications
+                that expand the privacy DeFi ecosystem.
               </p>
               <ul className="space-y-3 text-body text-neutral-600">
                 <li>• $10K - $500K per project</li>
@@ -121,7 +121,7 @@ export function CommunityPage() {
               Community Roadmap
             </h2>
             <p className="text-body-large text-neutral-700">
-              Tahapan pengembangan ZKswap yang dipandu oleh input komunitas
+              ZKswap development phases guided by community input
             </p>
           </div>
           <div className="relative">
@@ -213,7 +213,7 @@ export function CommunityPage() {
               Developer Resources
             </h2>
             <p className="text-body-large text-neutral-700">
-              Tools dan resources untuk developers yang ingin membangun di ekosistem ZKswap
+              Tools and resources for developers who want to build in the ZKswap ecosystem
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -223,7 +223,7 @@ export function CommunityPage() {
               </div>
               <h3 className="text-subtitle font-semibold text-neutral-900 mb-3">API Documentation</h3>
               <p className="text-body text-neutral-700 mb-4">
-                Comprehensive API reference untuk integrasi ZKswap ke aplikasi Anda.
+                Comprehensive API reference for integrating ZKswap into your application.
               </p>
               <a href="#" className="text-primary-600 hover:text-primary-700 font-medium">
                 View Documentation →
@@ -235,7 +235,7 @@ export function CommunityPage() {
               </div>
               <h3 className="text-subtitle font-semibold text-neutral-900 mb-3">SDK & Libraries</h3>
               <p className="text-body text-neutral-700 mb-4">
-                JavaScript/TypeScript SDK untuk integrasi yang mudah dan cepat.
+                JavaScript/TypeScript SDK for easy and fast integration.
               </p>
               <a href="#" className="text-primary-600 hover:text-primary-700 font-medium">
                 Download SDK →
@@ -247,7 +247,7 @@ export function CommunityPage() {
               </div>
               <h3 className="text-subtitle font-semibold text-neutral-900 mb-3">Integration Guides</h3>
               <p className="text-body text-neutral-700 mb-4">
-                Step-by-step guides untuk berbagai jenis integrasi dan use cases.
+                Step-by-step guides for various integration types and use cases.
               </p>
               <a href="#" className="text-primary-600 hover:text-primary-700 font-medium">
                 Read Guides →
@@ -259,7 +259,7 @@ export function CommunityPage() {
               </div>
               <h3 className="text-subtitle font-semibold text-neutral-900 mb-3">GitHub Repository</h3>
               <p className="text-body text-neutral-700 mb-4">
-                Source code, examples, dan contribuciones dari komunitas.
+                Source code, examples, and contributions from the community.
               </p>
               <a href="https://github.com/polurber/ZKswap.git" className="text-primary-600 hover:text-primary-700 font-medium" target="_blank" rel="noopener noreferrer">
                 View Repository →
@@ -271,7 +271,7 @@ export function CommunityPage() {
               </div>
               <h3 className="text-subtitle font-semibold text-neutral-900 mb-3">Developer Discord</h3>
               <p className="text-body text-neutral-700 mb-4">
-                Channel khusus untuk developers dengan support langsung dari tim.
+                Dedicated channel for developers with direct support from the team.
               </p>
               <a href="#" className="text-primary-600 hover:text-primary-700 font-medium">
                 Join Discord →
@@ -283,7 +283,7 @@ export function CommunityPage() {
               </div>
               <h3 className="text-subtitle font-semibold text-neutral-900 mb-3">Hackathons</h3>
               <p className="text-body text-neutral-700 mb-4">
-                Partisipasi dalam hackathons dan kompetisi pengembangan.
+                Participate in hackathons and development competitions.
               </p>
               <a href="#" className="text-primary-600 hover:text-primary-700 font-medium">
                 View Events →
@@ -293,7 +293,7 @@ export function CommunityPage() {
         </div>
       </section>
 
-      
+
 
       {/* Community Contributions */}
       <section className="py-24 bg-background-surface">
@@ -303,7 +303,7 @@ export function CommunityPage() {
               How to Contribute
             </h2>
             <p className="text-body-large text-neutral-700">
-              Berbagai cara untuk berkontribusi dan berharga bagi komunitas ZKswap
+              Various ways to contribute and add value to the ZKswap community
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -313,7 +313,7 @@ export function CommunityPage() {
               </div>
               <h3 className="font-semibold text-neutral-900 mb-3">Code Contribution</h3>
               <p className="text-body text-neutral-700">
-                Contribute ke open source codebase, report bugs, atau implement features baru.
+                Contribute to open source codebase, report bugs, or implement new features.
               </p>
             </div>
             <div className="card p-6 text-center">
@@ -322,7 +322,7 @@ export function CommunityPage() {
               </div>
               <h3 className="font-semibold text-neutral-900 mb-3">Content Creation</h3>
               <p className="text-body text-neutral-700">
-                Tulis artikel, buat video tutorial, atau translate documentation.
+                Write articles, create video tutorials, or translate documentation.
               </p>
             </div>
             <div className="card p-6 text-center">
@@ -331,7 +331,7 @@ export function CommunityPage() {
               </div>
               <h3 className="font-semibold text-neutral-900 mb-3">Community Support</h3>
               <p className="text-body text-neutral-700">
-                Help other members di Discord/Telegram, answer questions.
+                Help other members on Discord/Telegram, answer questions.
               </p>
             </div>
             <div className="card p-6 text-center">
@@ -340,7 +340,7 @@ export function CommunityPage() {
               </div>
               <h3 className="font-semibold text-neutral-900 mb-3">Integration</h3>
               <p className="text-body text-neutral-700">
-                Build integrations, plugins, atau applications yang menggunakan ZKswap.
+                Build integrations, plugins, or applications using ZKswap.
               </p>
             </div>
           </div>
@@ -354,10 +354,10 @@ export function CommunityPage() {
             Ready to Join the Revolution?
           </h2>
           <p className="text-body-large text-primary-100 mb-8 max-w-2xl mx-auto">
-            Become part of the privacy DeFi movement dan be part of shaping the future of decentralized finance.
+            Become part of the privacy DeFi movement and help shape the future of decentralized finance.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://x.com/zkswap131087?s=21" className="bg-white text-primary-600 font-semibold px-8 py-4 rounded-lg hover:bg-primary-50 transition-colors duration-200" target="_blank" rel="noopener noreferrer">
+            <a href="https://x.com/zkswap131087" className="bg-white text-primary-600 font-semibold px-8 py-4 rounded-lg hover:bg-primary-50 transition-colors duration-200" target="_blank" rel="noopener noreferrer">
               Follow on X
             </a>
             <a href="https://github.com/polurber/ZKswap.git" className="bg-transparent border-2 border-white text-white font-semibold px-8 py-4 rounded-lg hover:bg-white hover:text-primary-600 transition-colors duration-200" target="_blank" rel="noopener noreferrer">

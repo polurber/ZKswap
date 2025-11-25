@@ -41,12 +41,12 @@ export const getModeDescription = (): string => {
 
 // Warning message for real mode
 export const REAL_MODE_WARNING = `
-⚠️ REAL BLOCKCHAIN MODE AKTIF ⚠️
+⚠️ REAL BLOCKCHAIN MODE ACTIVE ⚠️
 
-• Transaksi akan berjalan di blockchain Solana yang nyata
-• Biaya gas akan dipotong dari saldo wallet Anda  
-• Transaksi tidak dapat dibatalkan
-• Anda bertanggung jawab penuh atas setiap transaksi
+• Transactions will run on the real Solana blockchain
+• Gas fees will be deducted from your wallet balance  
+• Transactions cannot be reversed
+• You are fully responsible for every transaction
 
-Pastikan saldo wallet mencukupi untuk biaya gas sebelum melakukan swap.
+Ensure your wallet balance is sufficient for gas fees before swapping.
 `;

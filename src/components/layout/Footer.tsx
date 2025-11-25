@@ -49,7 +49,7 @@ export function Footer() {
             <ul className="space-y-3">
               <li><Link to="/community" className="text-body font-bold text-neo-text hover:text-neo-secondary hover:underline decoration-2 underline-offset-2">Discord</Link></li>
               <li><a href="#" className="text-body font-bold text-neo-text hover:text-neo-secondary hover:underline decoration-2 underline-offset-2">Telegram</a></li>
-              <li><a href="https://x.com/zkswap131087?s=21" className="text-body font-bold text-neo-text hover:text-neo-secondary hover:underline decoration-2 underline-offset-2" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+              <li><a href="https://x.com/zkswap131087" className="text-body font-bold text-neo-text hover:text-neo-secondary hover:underline decoration-2 underline-offset-2" target="_blank" rel="noopener noreferrer">Twitter</a></li>
               <li><a href="https://github.com/polurber/ZKswap.git" className="text-body font-bold text-neo-text hover:text-neo-secondary hover:underline decoration-2 underline-offset-2" target="_blank" rel="noopener noreferrer">GitHub</a></li>
             </ul>
           </div>
@@ -71,7 +71,7 @@ export function Footer() {
             © 2025 ZKswap. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="https://x.com/zkswap131087?s=21" className="text-neo-text hover:text-neo-primary transition-transform hover:-translate-y-1" target="_blank" rel="noopener noreferrer">
+            <a href="https://x.com/zkswap131087" className="text-neo-text hover:text-neo-primary transition-transform hover:-translate-y-1" target="_blank" rel="noopener noreferrer">
               <span className="sr-only">X (Twitter)</span>
               <XLogo size={24} />
             </a>

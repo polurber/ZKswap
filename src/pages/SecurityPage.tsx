@@ -65,8 +65,8 @@ export function SecurityPage() {
               </div>
               <h3 className="text-subtitle font-semibold text-neutral-900 mb-4">MEV-Protected</h3>
               <p className="text-body text-neutral-700">
-                Sistem perlindungan terhadap MEV attacks dan front-running 
-                untuk menjaga fair execution.
+                Protection system against MEV attacks and front-running 
+                to ensure fair execution.
               </p>
             </div>
           </div>
@@ -81,7 +81,7 @@ export function SecurityPage() {
               Audit Summary
             </h2>
             <p className="text-body-large text-neutral-700">
-              Laporan audit independen yang memvalidasi keamanan sistem ZKswap
+              Independent audit reports validating the security of ZKswap system
             </p>
           </div>
           <div className="card p-8 max-w-4xl mx-auto">
@@ -165,7 +165,7 @@ export function SecurityPage() {
               Bug Bounty Program
             </h2>
             <p className="text-body-large text-neutral-700">
-              Program reward untuk security researchers yang menemukan vulnerabilities
+              Reward program for security researchers who discover vulnerabilities
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -222,7 +222,7 @@ export function SecurityPage() {
               Regulatory Compliance
             </h2>
             <p className="text-body-large text-neutral-700">
-              ZKswap mematuhi regulasi yang berlaku sambil mempertahankan privasi pengguna
+              ZKswap complies with applicable regulations while maintaining user privacy
             </p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -239,8 +239,8 @@ export function SecurityPage() {
                 <div className="border-l-4 border-primary-500 pl-6">
                   <h4 className="font-semibold text-neutral-900 mb-2">Data Protection</h4>
                   <p className="text-body text-neutral-700">
-                    Kebijakan data minimal dengan retention 72 jam dan encrypted storage 
-                    untuk semua data pengguna.
+                    Minimal data policy with 72-hour retention and encrypted storage 
+                    for all user data.
                   </p>
                 </div>
                 <div className="border-l-4 border-primary-500 pl-6">
@@ -290,7 +290,7 @@ export function SecurityPage() {
               Privacy Policy
             </h2>
             <p className="text-body-large text-neutral-700">
-              Kebijakan privasi yang transparan dan protectsi data pengguna
+              Transparent privacy policy and user data protection
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -300,8 +300,8 @@ export function SecurityPage() {
               </div>
               <h3 className="text-subtitle font-semibold text-neutral-900 mb-4">Data Minimization</h3>
               <p className="text-body text-neutral-700 mb-4">
-                ZKswap mengumpulkan minimal data yang diperlukan untuk operasional. 
-                Tidak ada tracking cookies atau data mining.
+                ZKswap collects minimal data required for operations. 
+                No tracking cookies or data mining.
               </p>
               <ul className="text-small text-neutral-600 space-y-1">
                 <li>• Only essential transaction data</li>
@@ -316,8 +316,8 @@ export function SecurityPage() {
               </div>
               <h3 className="text-subtitle font-semibold text-neutral-900 mb-4">Retention Policy</h3>
               <p className="text-body text-neutral-700 mb-4">
-                Kebijakan retensi data yang ketat dengan automatic deletion 
-                untuk melindungi privasi jangka panjang.
+                Strict data retention policy with automatic deletion 
+                to protect long-term privacy.
               </p>
               <ul className="text-small text-neutral-600 space-y-1">
                 <li>• Transaction logs: 72 hours</li>
@@ -338,7 +338,7 @@ export function SecurityPage() {
               Security Best Practices
             </h2>
             <p className="text-body-large text-neutral-700">
-              Panduan keamanan untuk pengguna ZKswap
+              Security guidelines for ZKswap users
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

@@ -111,12 +111,12 @@ export function TradingPage() {
     }
 
     if (!swapData.inputAmount || parseFloat(swapData.inputAmount) <= 0) {
-      alert('Masukkan jumlah yang valid')
+      alert('Enter a valid amount')
       return
     }
 
     if (inputTokenBalance && parseFloat(swapData.inputAmount) > inputTokenBalance) {
-      alert('Saldo tidak mencukupi')
+      alert('Insufficient balance')
       return
     }
 
@@ -125,7 +125,7 @@ export function TradingPage() {
 
     if (result.success && result.transactionId) {
       setLastTxId(result.transactionId)
-      alert(`Swap berhasil! Transaction ID: ${result.transactionId}`)
+      alert(`Swap successful! Transaction ID: ${result.transactionId}`)
       
       // Reset form
       setSwapData({
@@ -134,7 +134,7 @@ export function TradingPage() {
         outputAmount: ''
       })
     } else {
-      alert(`Swap gagal: ${result.error || 'Unknown error'}`)
+      alert(`Swap failed: ${result.error || 'Unknown error'}`)
     }
   }
 
@@ -149,7 +149,7 @@ export function TradingPage() {
           <div className="max-w-7xl mx-auto flex items-center space-x-3">
             <ExclamationTriangleIcon className="h-6 w-6 text-white" />
             <div>
-              <p className="text-white font-black uppercase">⚠️ REAL BLOCKCHAIN MODE AKTIF</p>
+              <p className="text-white font-black uppercase">⚠️ REAL BLOCKCHAIN MODE ACTIVE</p>
               <p className="text-white font-bold text-sm">Transaction will run on real Solana blockchain. You are fully responsible for every transaction.</p>
             </div>
           </div>
@@ -187,8 +187,8 @@ export function TradingPage() {
                   <div className="flex items-center space-x-2">
                     <div className="h-2 w-2 bg-white border border-black rounded-full animate-pulse"></div>
                     <div>
-                      <p className="text-sm font-black text-neo-text uppercase">Menghubungkan...</p>
-                      <p className="text-xs font-bold text-neo-text">Mohon tunggu</p>
+                      <p className="text-sm font-black text-neo-text uppercase">Connecting...</p>
+                      <p className="text-xs font-bold text-neo-text">Please wait</p>
                     </div>
                   </div>
                 </div>
@@ -252,7 +252,7 @@ export function TradingPage() {
 
               {/* Input Token */}
               <div className="mb-4">
-                <label className="block text-sm font-bold text-neo-text mb-2">Dari</label>
+                <label className="block text-sm font-bold text-neo-text mb-2">From</label>
                 <div className="p-4 border-3 border-neo-border rounded-neo bg-white shadow-neo-sm focus-within:shadow-neo transition-shadow">
                   <div className="flex items-center justify-between mb-2">
                     <select
@@ -266,11 +266,11 @@ export function TradingPage() {
                     </select>
                     {inputTokenBalance !== null && inputTokenBalance > 0 ? (
                       <span className="text-sm font-bold text-neo-success">
-                        Saldo: {inputTokenBalance.toFixed(4)} SOL
+                        Balance: {inputTokenBalance.toFixed(4)} SOL
                       </span>
                     ) : inputTokenBalance !== null ? (
                       <span className="text-sm font-bold text-neo-secondary">
-                        Saldo: {inputTokenBalance.toFixed(4)} SOL (Saldo tidak mencukupi)
+                        Balance: {inputTokenBalance.toFixed(4)} SOL (Insufficient balance)
                       </span>
                     ) : (
                       <span className="text-sm font-bold text-gray-400">
@@ -301,7 +301,7 @@ export function TradingPage() {
 
               {/* Output Token */}
               <div className="mb-6 mt-2">
-                <label className="block text-sm font-bold text-neo-text mb-2">Ke</label>
+                <label className="block text-sm font-bold text-neo-text mb-2">To</label>
                 <div className="p-4 border-3 border-neo-border rounded-neo bg-neo-bg shadow-neo-sm">
                   <select
                     value={swapData.outputToken}
@@ -326,7 +326,7 @@ export function TradingPage() {
               {quote && (
                 <div className="mb-6 p-4 bg-white border-3 border-neo-border rounded-neo space-y-2 text-sm shadow-neo-sm">
                   <div className="flex justify-between font-bold">
-                    <span className="text-gray-600">Harga</span>
+                    <span className="text-gray-600">Price</span>
                     <span className="text-neo-text">
                       1 {swapData.inputToken} = {currentPrice?.toFixed(6)} {swapData.outputToken}
                     </span>
@@ -345,7 +345,7 @@ export function TradingPage() {
                   </div>
                   {lastUpdate && (
                     <div className="text-xs font-mono text-gray-500 text-right">
-                      Update terakhir: {lastUpdate.toLocaleTimeString()}
+                      Last update: {lastUpdate.toLocaleTimeString()}
                     </div>
                   )}
                 </div>
@@ -367,14 +367,14 @@ export function TradingPage() {
                 {isSwapping ? (
                   <div className="flex items-center justify-center">
                     <div className="animate-spin rounded-full h-6 w-6 border-b-4 border-white mr-3"></div>
-                    Memproses Swap...
+                    Processing Swap...
                   </div>
                 ) : !isWalletConnected ? (
                   'Connect Wallet for Swap'
                 ) : isLoadingQuote ? (
                   'Loading Quote...'
                 ) : (
-                  'Swap Sekarang'
+                  'Swap Now'
                 )}
               </button>
 
@@ -409,7 +409,7 @@ export function TradingPage() {
           {/* Market Info */}
           <div>
             <div className="card p-6 mb-6">
-              <h3 className="text-xl font-black text-neo-text mb-4 uppercase">Informasi Pasar</h3>
+              <h3 className="text-xl font-black text-neo-text mb-4 uppercase">Market Information</h3>
               <div className="space-y-4 text-sm">
                 <div className="p-3 bg-neo-bg border-2 border-neo-border rounded-neo">
                   <p className="text-gray-600 font-bold mb-1">Network</p>
@@ -455,10 +455,10 @@ export function TradingPage() {
             {/* Wallet Info */}
             {isWalletConnected && (
               <div className="card p-6">
-                <h3 className="text-xl font-black text-neo-text mb-4 uppercase">Info Wallet</h3>
+                <h3 className="text-xl font-black text-neo-text mb-4 uppercase">Wallet Info</h3>
                 <div className="space-y-3 text-sm">
                   <div>
-                    <p className="text-gray-600 font-bold mb-1">Saldo SOL</p>
+                    <p className="text-gray-600 font-bold mb-1">SOL Balance</p>
                     <p className="font-black text-neo-text text-2xl">
                       {balance !== null ? `${balance.toFixed(4)} SOL` : 'Loading balance...'}
                     </p>
@@ -469,7 +469,7 @@ export function TradingPage() {
                     )}
                   </div>
                   <div>
-                    <p className="text-gray-600 font-bold mb-1">Alamat</p>
+                    <p className="text-gray-600 font-bold mb-1">Address</p>
                     <p className="font-mono text-xs text-neo-text bg-neo-bg p-2 rounded-neo border-2 border-neo-border break-all">
                       {mockWallet.connected && mockWallet.publicKey 
                         ? mockWallet.publicKey.toString()

@@ -96,8 +96,8 @@ export function Navbar() {
                 key={item.name}
                 to={item.href}
                 className={`font-bold px-4 py-2 rounded-neo border-2 border-transparent transition-all duration-200 ${isActive(item.href)
-                    ? 'bg-neo-accent text-neo-text border-neo-border shadow-neo-sm -translate-y-1'
-                    : 'text-neo-text hover:bg-white hover:border-neo-border hover:shadow-neo-sm hover:-translate-y-1'
+                  ? 'bg-neo-accent text-neo-text border-neo-border shadow-neo-sm -translate-y-1'
+                  : 'text-neo-text hover:bg-white hover:border-neo-border hover:shadow-neo-sm hover:-translate-y-1'
                   }`}
               >
                 {item.name}
@@ -142,7 +142,7 @@ export function Navbar() {
 
             {/* Social Icons */}
             <div className="flex items-center space-x-4 border-l-3 border-neo-border pl-6">
-              <a href="https://x.com/zkswap131087?s=21" className="text-neo-text hover:text-neo-primary transition-transform hover:-translate-y-1" target="_blank" rel="noopener noreferrer">
+              <a href="https://x.com/zkswap131087" className="text-neo-text hover:text-neo-primary transition-transform hover:-translate-y-1" target="_blank" rel="noopener noreferrer">
                 <span className="sr-only">X (Twitter)</span>
                 <XLogo size={20} />
               </a>
@@ -174,8 +174,8 @@ export function Navbar() {
                   to={item.href}
                   onClick={() => setIsOpen(false)}
                   className={`block px-4 py-3 rounded-neo font-bold border-3 transition-all ${isActive(item.href)
-                      ? 'bg-neo-accent text-neo-text border-neo-border shadow-neo'
-                      : 'bg-white text-neo-text border-transparent hover:border-neo-border hover:shadow-neo'
+                    ? 'bg-neo-accent text-neo-text border-neo-border shadow-neo'
+                    : 'bg-white text-neo-text border-transparent hover:border-neo-border hover:shadow-neo'
                     }`}
                 >
                   {item.name}

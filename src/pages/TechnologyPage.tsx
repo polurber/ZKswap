@@ -34,7 +34,7 @@ export function TechnologyPage() {
               <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Database className="text-primary-600" size={24} />
               </div>
-              <h3 className="text-subtitle font-semibold text-neutral-900 mb-4">Input Transaksi</h3>
+              <h3 className="text-subtitle font-semibold text-neutral-900 mb-4">Transaction Input</h3>
               <p className="text-body text-neutral-700">
                 Sensitive details such as sender address, recipient, and amounts 
                 are processed privately without exposure to the blockchain
@@ -185,10 +185,10 @@ export function TechnologyPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-title font-bold text-neutral-900 mb-4">
-              Spesifikasi Teknis
+              Technical Specifications
             </h2>
             <p className="text-body-large text-neutral-700">
-              Detail teknis implementasi ZK di ZKswap
+              Technical details of ZK implementation in ZKswap
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -231,10 +231,10 @@ export function TechnologyPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-title font-bold text-neutral-900 mb-4">
-              Jaminan Privasi
+              Privacy Guarantees
             </h2>
             <p className="text-body-large text-neutral-700">
-              Apa yang dilindungi dan bagaimana ZKswap menjaga privasi Anda
+              What is protected and how ZKswap maintains your privacy
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -244,11 +244,11 @@ export function TechnologyPage() {
               </div>
               <h3 className="text-subtitle font-semibold text-neutral-900 mb-4">Transaction Amount</h3>
               <p className="text-body text-neutral-700 mb-4">
-                Jumlah transaksi disembunyikan menggunakan encryption schemes 
-                yang memungkinkan operasi matematika tanpa reveal nilai aktual.
+                Transaction amounts are hidden using encryption schemes 
+                that enable mathematical operations without revealing actual values.
               </p>
               <p className="text-small text-neutral-600">
-                Kriptografi: Twisted ElGamal + ZK proofs
+                Cryptography: Twisted ElGamal + ZK proofs
               </p>
             </div>
             <div className="card p-8">
@@ -257,11 +257,11 @@ export function TechnologyPage() {
               </div>
               <h3 className="text-subtitle font-semibold text-neutral-900 mb-4">Transaction Identity</h3>
               <p className="text-body text-neutral-700 mb-4">
-                Identitas pengirim dan penerima dilindungi dengan one-time addresses 
-                dan ring signatures untuk privacy yang maksimal.
+                Sender and recipient identities are protected with one-time addresses 
+                and ring signatures for maximum privacy.
               </p>
               <p className="text-small text-neutral-600">
-                Kriptografi: Stealth addresses + Ring signatures
+                Cryptography: Stealth addresses + Ring signatures
               </p>
             </div>
             <div className="card p-8">
@@ -270,11 +270,11 @@ export function TechnologyPage() {
               </div>
               <h3 className="text-subtitle font-semibold text-neutral-900 mb-4">Transaction Graph</h3>
               <p className="text-body text-neutral-700 mb-4">
-                Hubungan antar transaksi disembunyikan dengan mixing dan 
-                obfuscation techniques yang memutuskan linkability.
+                Transaction relationships are hidden with mixing and 
+                obfuscation techniques that break linkability.
               </p>
               <p className="text-small text-neutral-600">
-                Kriptografi: Two-hop routing + Token obfuscation
+                Cryptography: Two-hop routing + Token obfuscation
               </p>
             </div>
           </div>
@@ -286,10 +286,10 @@ export function TechnologyPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-title font-bold text-neutral-900 mb-4">
-              Implementasi Teknis
+              Technical Implementation
             </h2>
             <p className="text-body-large text-neutral-700">
-              Details implementasi dan tools yang digunakan dalam development
+              Implementation details and tools used in development
             </p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -353,10 +353,10 @@ export function TechnologyPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-title font-bold text-neutral-900 mb-4">
-              Roadmap Teknologi
+              Technology Roadmap
             </h2>
             <p className="text-body-large text-neutral-700">
-              Pengembangan teknologi ZKswap di masa depan
+              Future development of ZKswap technology
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -364,8 +364,8 @@ export function TechnologyPage() {
               <div className="text-2xl font-bold text-primary-600 mb-2">Q2 2025</div>
               <h3 className="text-subtitle font-semibold text-neutral-900 mb-4">zk-SNARKs v2</h3>
               <p className="text-body text-neutral-700">
-                Upgrade ke sistem ZK yang lebih efisien dengan batch verification 
-                dan improved performance.
+                Upgrade to more efficient ZK system with batch verification 
+                and improved performance.
               </p>
             </div>
             <div className="card p-6">
@@ -380,7 +380,7 @@ export function TechnologyPage() {
               <div className="text-2xl font-bold text-primary-600 mb-2">Q4 2025</div>
               <h3 className="text-subtitle font-semibold text-neutral-900 mb-4">Cross-Chain Privacy</h3>
               <p className="text-body text-neutral-700">
-                Ekstensi privasi ke blockchain lain menggunakan 
+                Privacy extension to other blockchains using 
                 cross-chain ZK bridge technology.
               </p>
             </div>
@@ -392,10 +392,10 @@ export function TechnologyPage() {
       <section className="py-24 bg-primary-500">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-title font-bold text-white mb-6">
-            Pelajari Lebih Lanjut
+            Learn More
           </h2>
           <p className="text-body-large text-primary-100 mb-8 max-w-2xl mx-auto">
-            Dapatkan pemahaman mendalam tentang teknologi ZK dan implementasinya dalam DeFi.
+            Get a deep understanding of ZK technology and its implementation in DeFi.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/docs" className="bg-white text-primary-600 font-semibold px-8 py-4 rounded-lg hover:bg-primary-50 transition-colors duration-200">

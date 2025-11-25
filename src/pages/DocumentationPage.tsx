@@ -129,7 +129,7 @@ export function DocumentationPage() {
                 <div className="card p-8">
                   <h3 className="text-subtitle font-semibold text-neutral-900 mb-4">Basic Integration</h3>
                   <p className="text-body text-neutral-700 mb-6">
-                    Contoh sederhana penggunaan ZKswap SDK untuk integrasi ke aplikasi Anda:
+                    Simple example of using ZKswap SDK for integration into your application:
                   </p>
                   <div className="relative">
                     <pre className="bg-neutral-900 text-neutral-100 p-4 rounded-lg overflow-x-auto text-sm">
@@ -198,10 +198,10 @@ const result = await zkswap.swap({
                 <div className="card p-8">
                   <h3 className="text-subtitle font-semibold text-neutral-900 mb-4">Prerequisites</h3>
                   <ul className="space-y-2 text-body text-neutral-700">
-                    <li>• Node.js 18+ dan npm/yarn/pnpm</li>
-                    <li>• Solana wallet (Phantom, Solflare, dll)</li>
+                    <li>• Node.js 18+ and npm/yarn/pnpm</li>
+                    <li>• Solana wallet (Phantom, Solflare, etc.)</li>
                     <li>• Basic understanding of Solana programming</li>
-                    <li>• Familiarity dengan TypeScript/JavaScript</li>
+                    <li>• Familiarity with TypeScript/JavaScript</li>
                   </ul>
                 </div>
               </div>
@@ -213,7 +213,7 @@ const result = await zkswap.swap({
                 <div>
                   <h2 className="text-title font-bold text-neutral-900 mb-6">API Reference</h2>
                   <p className="text-body text-neutral-700 mb-8">
-                    Dokumentasi lengkap API ZKswap untuk semua endpoint dan parameter yang tersedia.
+                    Complete ZKswap API documentation for all available endpoints and parameters.
                   </p>
                 </div>
 
@@ -226,7 +226,7 @@ const result = await zkswap.swap({
                       <code>https://api.zkswap.com/v1/</code>
                     </div>
                     <p className="text-sm text-neutral-400">
-                      Semua requests memerlukan API key di header Authorization
+                      All requests require an API key in the Authorization header
                     </p>
                   </div>
                 </div>
@@ -242,7 +242,7 @@ const result = await zkswap.swap({
                       </div>
                     </div>
                     <p className="text-body text-neutral-700 mb-4">
-                      Mendapatkan estimasi harga dan fee untuk trade tertentu
+                      Get price and fee estimates for a specific trade
                     </p>
                     <div className="space-y-3">
                       <h4 className="font-semibold text-neutral-900">Parameters:</h4>
@@ -264,7 +264,7 @@ const result = await zkswap.swap({
                       </div>
                     </div>
                     <p className="text-body text-neutral-700 mb-4">
-                      Melakukan trade dengan privasi yang dipilih
+                      Execute trade with selected privacy level
                     </p>
                     <div className="space-y-3">
                       <h4 className="font-semibold text-neutral-900">Request Body:</h4>
@@ -290,7 +290,7 @@ const result = await zkswap.swap({
                 <div>
                   <h2 className="text-title font-bold text-neutral-900 mb-6">SDK Integration</h2>
                   <p className="text-body text-neutral-700 mb-8">
-                    Panduan detail untuk mengintegrasikan ZKswap SDK ke dalam aplikasi Anda.
+                    Detailed guide for integrating ZKswap SDK into your application.
                   </p>
                 </div>
 
@@ -377,7 +377,7 @@ const zkswap = new ZKswap({
                 <div>
                   <h2 className="text-title font-bold text-neutral-900 mb-6">Privacy Modes</h2>
                   <p className="text-body text-neutral-700 mb-8">
-                    Memahami berbagai level privacy yang tersedia di ZKswap dan kapan masing-masing digunakan.
+                    Understanding the various privacy levels available in ZKswap and when each should be used.
                   </p>
                 </div>
 
@@ -392,13 +392,13 @@ const zkswap = new ZKswap({
                       <span className="ml-auto px-3 py-1 bg-neutral-100 text-neutral-600 rounded-full text-sm">Recommended</span>
                     </div>
                     <p className="text-body text-neutral-700 mb-4">
-                      Privasi dasar dengan one-time addresses dan route obfuscation. Cocok untuk penggunaan sehari-hari.
+                      Basic privacy with one-time addresses and route obfuscation. Suitable for daily use.
                     </p>
                     <ul className="text-body text-neutral-600 space-y-2">
-                      <li>• One-time addresses untuk setiap transaksi</li>
-                      <li>• Route obfuscation untuk memutus linkability</li>
+                      <li>• One-time addresses for each transaction</li>
+                      <li>• Route obfuscation to break linkability</li>
                       <li>• Metadata protection (timestamps, amounts hidden)</li>
-                      <li>• Execution time: 0-3 menit</li>
+                      <li>• Execution time: 0-3 minutes</li>
                       <li>• Fee: 0.1% protocol + network fees</li>
                     </ul>
                   </div>
@@ -412,13 +412,13 @@ const zkswap = new ZKswap({
                       <span className="ml-auto px-3 py-1 bg-primary-100 text-primary-600 rounded-full text-sm">Balanced</span>
                     </div>
                     <p className="text-body text-neutral-700 mb-4">
-                      Privasi ditingkatkan dengan two-hop routing dan random bridge tokens. Cocok untuk volume sedang.
+                      Enhanced privacy with two-hop routing and random bridge tokens. Suitable for medium volume.
                     </p>
                     <ul className="text-body text-neutral-600 space-y-2">
-                      <li>• Two-hop routing untuk memutus korelasi</li>
-                      <li>• Random bridge tokens untuk obfuscation tambahan</li>
+                      <li>• Two-hop routing to break correlation</li>
+                      <li>• Random bridge tokens for additional obfuscation</li>
                       <li>• Advanced privacy algorithms</li>
-                      <li>• Execution time: 5-15 menit</li>
+                      <li>• Execution time: 5-15 minutes</li>
                       <li>• Fee: 0.25% protocol + network fees</li>
                     </ul>
                   </div>
@@ -432,13 +432,13 @@ const zkswap = new ZKswap({
                       <span className="ml-auto px-3 py-1 bg-primary-900 text-white rounded-full text-sm">Maximum</span>
                     </div>
                     <p className="text-body text-neutral-700 mb-4">
-                      Privasi maksimal dengan ring signatures dan Monero integration. Untuk use case sensitive.
+                      Maximum privacy with ring signatures and Monero integration. For sensitive use cases.
                     </p>
                     <ul className="text-body text-neutral-600 space-y-2">
-                      <li>• Ring signatures untuk anonymity set protection</li>
-                      <li>• Monero integration untuk maximum privacy</li>
+                      <li>• Ring signatures for anonymity set protection</li>
+                      <li>• Monero integration for maximum privacy</li>
                       <li>• Advanced cryptographic protocols</li>
-                      <li>• Execution time: 10-40 menit</li>
+                      <li>• Execution time: 10-40 minutes</li>
                       <li>• Fee: 0.5% protocol + network fees</li>
                     </ul>
                   </div>
@@ -452,7 +452,7 @@ const zkswap = new ZKswap({
                 <div>
                   <h2 className="text-title font-bold text-neutral-900 mb-6">Troubleshooting</h2>
                   <p className="text-body text-neutral-700 mb-8">
-                    Solusi untuk masalah umum yang mungkin Anda hadapi saat menggunakan ZKswap.
+                    Solutions for common issues you may encounter when using ZKswap.
                   </p>
                 </div>
 
@@ -463,34 +463,34 @@ const zkswap = new ZKswap({
                       <div>
                         <h4 className="font-semibold text-neutral-900 mb-2">Transaction Failed</h4>
                         <p className="text-body text-neutral-700 mb-2">
-                          Transaksi gagal dengan error "insufficient funds" atau "slippage exceeded"
+                          Transaction failed with "insufficient funds" or "slippage exceeded" error
                         </p>
                         <ul className="text-body text-neutral-600 space-y-1">
-                          <li>• Periksa saldo token cukup untuk trade + fees</li>
-                          <li>• Increase slippage tolerance jika market volatile</li>
-                          <li>• Coba dengan privacy level yang berbeda</li>
+                          <li>• Check that token balance is sufficient for trade + fees</li>
+                          <li>• Increase slippage tolerance if market is volatile</li>
+                          <li>• Try with a different privacy level</li>
                         </ul>
                       </div>
                       <div>
                         <h4 className="font-semibold text-neutral-900 mb-2">Wallet Connection Issues</h4>
                         <p className="text-body text-neutral-700 mb-2">
-                          Tidak bisa connect wallet atau wallet tidak terdeteksi
+                          Cannot connect wallet or wallet not detected
                         </p>
                         <ul className="text-body text-neutral-600 space-y-1">
-                          <li>• Pastikan wallet extension terinstall dan aktif</li>
-                          <li>• Refresh halaman dan coba connect lagi</li>
-                          <li>• Periksa network selected sesuai dengan blockchain</li>
+                          <li>• Make sure wallet extension is installed and active</li>
+                          <li>• Refresh page and try connecting again</li>
+                          <li>• Check that selected network matches the blockchain</li>
                         </ul>
                       </div>
                       <div>
                         <h4 className="font-semibold text-neutral-900 mb-2">Slow Transaction Time</h4>
                         <p className="text-body text-neutral-700 mb-2">
-                          Transaksi memakan waktu lebih lama dari yang diharapkan
+                          Transaction takes longer than expected
                         </p>
                         <ul className="text-body text-neutral-600 space-y-1">
-                          <li>• Private mode memang lebih lambat karena privacy processing</li>
-                          <li>• Check network congestion di Solana status page</li>
-                          <li>• Consider menggunakan Standard privacy untuk speed</li>
+                          <li>• Private mode is slower due to privacy processing</li>
+                          <li>• Check network congestion on Solana status page</li>
+                          <li>• Consider using Standard privacy for speed</li>
                         </ul>
                       </div>
                     </div>
@@ -501,19 +501,19 @@ const zkswap = new ZKswap({
                     <div className="space-y-3">
                       <div className="flex justify-between items-center py-2 border-b border-neutral-200">
                         <code className="text-sm bg-neutral-100 px-2 py-1 rounded">INSUFFICIENT_BALANCE</code>
-                        <span className="text-body text-neutral-600">Saldo tidak cukup untuk transaksi</span>
+                        <span className="text-body text-neutral-600">Insufficient balance for transaction</span>
                       </div>
                       <div className="flex justify-between items-center py-2 border-b border-neutral-200">
                         <code className="text-sm bg-neutral-100 px-2 py-1 rounded">SLIPPAGE_EXCEEDED</code>
-                        <span className="text-body text-neutral-600">Slippage tolerance terlalu rendah</span>
+                        <span className="text-body text-neutral-600">Slippage tolerance too low</span>
                       </div>
                       <div className="flex justify-between items-center py-2 border-b border-neutral-200">
                         <code className="text-sm bg-neutral-100 px-2 py-1 rounded">PRIVACY_LEVEL_INVALID</code>
-                        <span className="text-body text-neutral-600">Privacy level tidak valid</span>
+                        <span className="text-body text-neutral-600">Invalid privacy level</span>
                       </div>
                       <div className="flex justify-between items-center py-2">
                         <code className="text-sm bg-neutral-100 px-2 py-1 rounded">NETWORK_CONGESTED</code>
-                        <span className="text-body text-neutral-600">Network sedang congestion</span>
+                        <span className="text-body text-neutral-600">Network is congested</span>
                       </div>
                     </div>
                   </div>
