@@ -3,10 +3,10 @@ import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { Menu, X, Wallet, Github } from 'lucide-react'
 
 const XLogo = ({ size = 20, className = "" }: { size?: number; className?: string }) => (
-  <svg 
-    width={size} 
-    height={size} 
-    viewBox="0 0 24 24" 
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
     fill="currentColor"
     className={className}
   >
@@ -23,7 +23,7 @@ export function Navbar() {
   const location = useLocation()
   const navigate = useNavigate()
   const { connected, getBalance, getWalletAddress, disconnectWallet } = useWalletData()
-  
+
   // Listen for mock wallet connection events to update UI
   useEffect(() => {
     const handleMockWalletConnected = (event: any) => {
@@ -51,7 +51,7 @@ export function Navbar() {
       window.addEventListener('mockWalletDisconnected', handleMockWalletDisconnected)
       window.addEventListener('forceUIUpdate', handleForceUpdate)
     }
-    
+
     return () => {
       if (typeof window !== 'undefined') {
         window.removeEventListener('mockWalletConnected', handleMockWalletConnected)
@@ -95,11 +95,10 @@ export function Navbar() {
               <Link
                 key={item.name}
                 to={item.href}
-                className={`font-bold px-4 py-2 rounded-neo border-2 border-transparent transition-all duration-200 ${
-                  isActive(item.href)
+                className={`font-bold px-4 py-2 rounded-neo border-2 border-transparent transition-all duration-200 ${isActive(item.href)
                     ? 'bg-neo-accent text-neo-text border-neo-border shadow-neo-sm -translate-y-1'
                     : 'text-neo-text hover:bg-white hover:border-neo-border hover:shadow-neo-sm hover:-translate-y-1'
-                }`}
+                  }`}
               >
                 {item.name}
               </Link>
@@ -131,7 +130,7 @@ export function Navbar() {
                   </button>
                 </div>
               ) : (
-                <button 
+                <button
                   onClick={() => setVisible(true)}
                   className="btn-primary flex items-center space-x-2"
                 >
@@ -143,11 +142,11 @@ export function Navbar() {
 
             {/* Social Icons */}
             <div className="flex items-center space-x-4 border-l-3 border-neo-border pl-6">
-              <a href="#" className="text-neo-text hover:text-neo-primary transition-transform hover:-translate-y-1">
+              <a href="https://x.com/zkswap131087?s=21" className="text-neo-text hover:text-neo-primary transition-transform hover:-translate-y-1" target="_blank" rel="noopener noreferrer">
                 <span className="sr-only">X (Twitter)</span>
                 <XLogo size={20} />
               </a>
-              <a href="#" className="text-neo-text hover:text-neo-primary transition-transform hover:-translate-y-1">
+              <a href="https://github.com/polurber/ZKswap.git" className="text-neo-text hover:text-neo-primary transition-transform hover:-translate-y-1" target="_blank" rel="noopener noreferrer">
                 <span className="sr-only">GitHub</span>
                 <Github size={20} strokeWidth={2.5} />
               </a>
@@ -174,16 +173,15 @@ export function Navbar() {
                   key={item.name}
                   to={item.href}
                   onClick={() => setIsOpen(false)}
-                  className={`block px-4 py-3 rounded-neo font-bold border-3 transition-all ${
-                    isActive(item.href)
+                  className={`block px-4 py-3 rounded-neo font-bold border-3 transition-all ${isActive(item.href)
                       ? 'bg-neo-accent text-neo-text border-neo-border shadow-neo'
                       : 'bg-white text-neo-text border-transparent hover:border-neo-border hover:shadow-neo'
-                  }`}
+                    }`}
                 >
                   {item.name}
                 </Link>
               ))}
-              
+
               {/* Mobile Wallet Status */}
               <div className="border-t-3 border-neo-border pt-4 mt-4">
                 {isWalletConnected ? (
@@ -199,7 +197,7 @@ export function Navbar() {
                         </div>
                       </div>
                     </div>
-                    <button 
+                    <button
                       onClick={disconnectWallet}
                       className="w-full btn-secondary text-center"
                     >
@@ -207,7 +205,7 @@ export function Navbar() {
                     </button>
                   </div>
                 ) : (
-                  <button 
+                  <button
                     onClick={() => {
                       setVisible(true)
                       setIsOpen(false)

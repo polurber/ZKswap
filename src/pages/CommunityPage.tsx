@@ -1,5 +1,17 @@
 import React from 'react'
-import { Users, MessageCircle, Github, Twitter, Award, BookOpen, Code, Zap } from 'lucide-react'
+import { Users, Github, Award, BookOpen, Code, Zap, MessageCircle } from 'lucide-react'
+
+const XLogo = ({ size = 24, className = "" }: { size?: number; className?: string }) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    className={className}
+  >
+    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+  </svg>
+);
 
 export function CommunityPage() {
   return (
@@ -11,7 +23,7 @@ export function CommunityPage() {
             Join the Community
           </h1>
           <p className="text-body-large text-neutral-700 max-w-3xl mx-auto">
-            Join the leading privacy DeFi community and be part of the 
+            Join the leading privacy DeFi community and be part of the
             private trading revolution in the Solana ecosystem.
           </p>
         </div>
@@ -28,48 +40,20 @@ export function CommunityPage() {
               Find ZKswap on your preferred platform and stay up-to-date with the latest developments
             </p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-            <a href="#" className="card p-6 text-center hover:scale-105 transition-transform">
-              <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <MessageCircle className="text-primary-600" size={24} />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+            <a href="https://x.com/zkswap131087?s=21" className="card p-8 text-center hover:scale-105 transition-transform" target="_blank" rel="noopener noreferrer">
+              <div className="w-16 h-16 bg-primary-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                <XLogo className="text-primary-600" size={32} />
               </div>
-              <div className="font-semibold text-neutral-900 mb-2">Discord</div>
-              <div className="text-small text-neutral-600">15,000+ members</div>
+              <div className="font-semibold text-neutral-900 mb-2 text-lg">X</div>
+              <div className="text-body text-neutral-600">25,000+ followers</div>
             </a>
-            <a href="#" className="card p-6 text-center hover:scale-105 transition-transform">
-              <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <MessageCircle className="text-primary-600" size={24} />
+            <a href="https://github.com/polurber/ZKswap.git" className="card p-8 text-center hover:scale-105 transition-transform" target="_blank" rel="noopener noreferrer">
+              <div className="w-16 h-16 bg-primary-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                <Github className="text-primary-600" size={32} />
               </div>
-              <div className="font-semibold text-neutral-900 mb-2">Telegram</div>
-              <div className="text-small text-neutral-600">8,500+ members</div>
-            </a>
-            <a href="#" className="card p-6 text-center hover:scale-105 transition-transform">
-              <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <Twitter className="text-primary-600" size={24} />
-              </div>
-              <div className="font-semibold text-neutral-900 mb-2">Twitter</div>
-              <div className="text-small text-neutral-600">25,000+ followers</div>
-            </a>
-            <a href="#" className="card p-6 text-center hover:scale-105 transition-transform">
-              <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <Github className="text-primary-600" size={24} />
-              </div>
-              <div className="font-semibold text-neutral-900 mb-2">GitHub</div>
-              <div className="text-small text-neutral-600">Open source</div>
-            </a>
-            <a href="#" className="card p-6 text-center hover:scale-105 transition-transform">
-              <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <BookOpen className="text-primary-600" size={24} />
-              </div>
-              <div className="font-semibold text-neutral-900 mb-2">Forum</div>
-              <div className="text-small text-neutral-600">Community hub</div>
-            </a>
-            <a href="#" className="card p-6 text-center hover:scale-105 transition-transform">
-              <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <Code className="text-primary-600" size={24} />
-              </div>
-              <div className="font-semibold text-neutral-900 mb-2">Blog</div>
-              <div className="text-small text-neutral-600">Technical insights</div>
+              <div className="font-semibold text-neutral-900 mb-2 text-lg">GitHub</div>
+              <div className="text-body text-neutral-600">Open source</div>
             </a>
           </div>
         </div>
@@ -93,7 +77,7 @@ export function CommunityPage() {
               </div>
               <h3 className="text-subtitle font-semibold text-neutral-900 mb-4">Ambassador Program</h3>
               <p className="text-body text-neutral-700 mb-6">
-                Jadilah duta ZKswap dan dapatkan reward untuk membantu membangun komunitas 
+                Jadilah duta ZKswap dan dapatkan reward untuk membantu membangun komunitas
                 privacy DeFi di region Anda.
               </p>
               <ul className="space-y-3 text-body text-neutral-600">
@@ -112,7 +96,7 @@ export function CommunityPage() {
               </div>
               <h3 className="text-subtitle font-semibold text-neutral-900 mb-4">Grant Program</h3>
               <p className="text-body text-neutral-700 mb-6">
-                Dapatkan funding untuk membangun tools, integrations, dan aplikasi 
+                Dapatkan funding untuk membangun tools, integrations, dan aplikasi
                 yang memperluas ekosistem privacy DeFi.
               </p>
               <ul className="space-y-3 text-body text-neutral-600">
@@ -143,7 +127,7 @@ export function CommunityPage() {
           <div className="relative">
             {/* Timeline line */}
             <div className="absolute left-1/2 transform -translate-x-px h-full w-0.5 bg-primary-200"></div>
-            
+
             <div className="space-y-12">
               {/* Q1 2025 */}
               <div className="relative flex items-center">
@@ -277,7 +261,7 @@ export function CommunityPage() {
               <p className="text-body text-neutral-700 mb-4">
                 Source code, examples, dan contribuciones dari komunitas.
               </p>
-              <a href="#" className="text-primary-600 hover:text-primary-700 font-medium">
+              <a href="https://github.com/polurber/ZKswap.git" className="text-primary-600 hover:text-primary-700 font-medium" target="_blank" rel="noopener noreferrer">
                 View Repository →
               </a>
             </div>
@@ -309,41 +293,7 @@ export function CommunityPage() {
         </div>
       </section>
 
-      {/* Community Metrics */}
-      <section className="py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-title font-bold text-neutral-900 mb-4">
-              Community Growth
-            </h2>
-            <p className="text-body-large text-neutral-700">
-              Statistik pertumbuhan komunitas ZKswap
-            </p>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="text-hero font-bold text-primary-600 mb-2">50K+</div>
-              <div className="text-body text-neutral-700">Total Members</div>
-              <div className="text-small text-neutral-500 mt-1">Across all platforms</div>
-            </div>
-            <div className="text-center">
-              <div className="text-hero font-bold text-primary-600 mb-2">200+</div>
-              <div className="text-body text-neutral-700">Contributors</div>
-              <div className="text-small text-neutral-500 mt-1">To open source</div>
-            </div>
-            <div className="text-center">
-              <div className="text-hero font-bold text-primary-600 mb-2">15</div>
-              <div className="text-body text-neutral-700">Ambassadors</div>
-              <div className="text-small text-neutral-500 mt-1">Global representation</div>
-            </div>
-            <div className="text-center">
-              <div className="text-hero font-bold text-primary-600 mb-2">50+</div>
-              <div className="text-body text-neutral-700">Grants Funded</div>
-              <div className="text-small text-neutral-500 mt-1">Total $2M+ distributed</div>
-            </div>
-          </div>
-        </div>
-      </section>
+      
 
       {/* Community Contributions */}
       <section className="py-24 bg-background-surface">
@@ -407,11 +357,11 @@ export function CommunityPage() {
             Become part of the privacy DeFi movement dan be part of shaping the future of decentralized finance.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="#" className="bg-white text-primary-600 font-semibold px-8 py-4 rounded-lg hover:bg-primary-50 transition-colors duration-200">
-              Join Discord
+            <a href="https://x.com/zkswap131087?s=21" className="bg-white text-primary-600 font-semibold px-8 py-4 rounded-lg hover:bg-primary-50 transition-colors duration-200" target="_blank" rel="noopener noreferrer">
+              Follow on X
             </a>
-            <a href="#" className="bg-transparent border-2 border-white text-white font-semibold px-8 py-4 rounded-lg hover:bg-white hover:text-primary-600 transition-colors duration-200">
-              Apply for Grant
+            <a href="https://github.com/polurber/ZKswap.git" className="bg-transparent border-2 border-white text-white font-semibold px-8 py-4 rounded-lg hover:bg-white hover:text-primary-600 transition-colors duration-200" target="_blank" rel="noopener noreferrer">
+              View on GitHub
             </a>
           </div>
         </div>
