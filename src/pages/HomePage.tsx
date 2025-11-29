@@ -62,6 +62,11 @@ export function HomePage() {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
+            <div className="bg-neo-secondary border-3 border-neo-border rounded-neo p-4 mb-8 inline-block shadow-neo animate-pulse-fast">
+              <p className="text-white font-black text-sm md:text-base uppercase tracking-wider">
+                CA: <span className="font-mono text-neo-accent">8G3Y2qPP9V4vDj7mi72MKY9Z6CNf97uNRNAveYnpump</span>
+              </p>
+            </div>
             <h1 className="text-5xl md:text-7xl font-black text-neo-text mb-8 tracking-tighter uppercase leading-tight">
               Private Trading, 
               <br />
