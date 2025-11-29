@@ -35,7 +35,7 @@ export function HomePage() {
       window.addEventListener('mockWalletDisconnected', handleMockWalletDisconnected)
       window.addEventListener('forceUIUpdate', handleForceUpdate)
     }
-    
+
     return () => {
       if (typeof window !== 'undefined') {
         window.removeEventListener('mockWalletConnected', handleMockWalletConnected)
@@ -68,15 +68,15 @@ export function HomePage() {
               </p>
             </div>
             <h1 className="text-5xl md:text-7xl font-black text-neo-text mb-8 tracking-tighter uppercase leading-tight">
-              Private Trading, 
+              Private Trading,
               <br />
               <span className="bg-neo-primary text-white px-4 py-1 border-3 border-neo-border shadow-neo rotate-1 inline-block mt-2">Uncompromised</span>
             </h1>
             <p className="text-xl md:text-2xl font-bold text-neo-text mb-10 max-w-3xl mx-auto leading-relaxed border-3 border-neo-border bg-white p-6 rounded-neo shadow-neo relative z-10">
-              ZKswap is a privacy-first DEX aggregator that combines zero-knowledge proofs 
+              ZKswap is a privacy-first DEX aggregator that combines zero-knowledge proofs
               with liquidity aggregation to provide the best prices, low fees, and maximum privacy.
             </p>
-            
+
             {/* Wallet Status */}
             {isWalletConnected ? (
               <div className="bg-neo-success border-3 border-neo-border rounded-neo p-4 mb-8 inline-block shadow-neo animate-slide-up">
@@ -102,9 +102,9 @@ export function HomePage() {
                 </div>
               </div>
             )}
-            
+
             <div className="flex flex-col sm:flex-row gap-6 justify-center relative z-20">
-              <button 
+              <button
                 onClick={handleStartTrading}
                 className="btn-primary text-xl px-10 py-5"
               >
@@ -115,10 +115,10 @@ export function HomePage() {
                 How ZK Works
               </Link>
             </div>
-            
+
             {!isWalletConnected && (
               <div className="mt-8">
-                <button 
+                <button
                   onClick={connectWallet}
                   className="inline-flex items-center px-8 py-3 border-3 border-neo-border bg-white text-neo-text font-bold rounded-neo shadow-neo hover:shadow-neo-lg hover:-translate-y-1 transition-all hover:bg-neo-accent"
                 >
@@ -256,10 +256,10 @@ export function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-5xl font-black text-neo-text mb-8 uppercase tracking-tight">
-                How It Works: <br/>Zero-Knowledge
+                How It Works: <br />Zero-Knowledge
               </h2>
               <p className="text-xl font-bold text-neo-text mb-8 leading-relaxed border-l-4 border-neo-primary pl-6">
-                ZKswap uses zero-knowledge proofs to minimize on-chain data 
+                ZKswap uses zero-knowledge proofs to minimize on-chain data
                 exposure while ensuring transaction validity.
               </p>
               <div className="space-y-6">
@@ -308,7 +308,7 @@ export function HomePage() {
                     Uncompromised Privacy
                   </h3>
                   <p className="text-lg font-bold text-neo-text">
-                    ZKswap enables trading with maximum privacy without compromising 
+                    ZKswap enables trading with maximum privacy without compromising
                     blockchain transparency and security.
                   </p>
                 </div>
@@ -358,7 +358,7 @@ export function HomePage() {
               Join the <span className="bg-neo-secondary text-white px-3 shadow-neo-sm transform -rotate-2 inline-block">Community</span> of ZKswap
             </h2>
             <p className="text-2xl font-bold text-neo-text mb-12 leading-relaxed">
-              Be part of the privacy DeFi revolution and get access to exclusive features, 
+              Be part of the privacy DeFi revolution and get access to exclusive features,
               rewards, and ambassador programs.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
@@ -383,7 +383,7 @@ export function HomePage() {
             <p className="text-2xl font-bold text-neo-text mb-10 max-w-2xl mx-auto">
               Start a revolutionary trading experience with maximum privacy and cutting-edge performance.
             </p>
-            <button 
+            <button
               onClick={handleStartTrading}
               className="bg-neo-text text-white font-black text-xl px-12 py-5 rounded-neo shadow-neo hover:bg-neo-accent hover:text-neo-text border-3 border-transparent hover:border-neo-border transition-all duration-200 hover:shadow-neo-lg"
             >
